@@ -42,6 +42,27 @@ collections:
         region: ap-southeast-2
       patterns:
       - ^IMOS/AATAMS/acoustic_detections_QC/.*\.csv$
+      time_coverage_field_name: detection_datetime
+      geospatial_lat_field_name: receiver_deployment_latitude
+      geospatial_lon_field_name: receiver_deployment_longitude
+  tags:
+  - ANIMAL_TRACKING
+- metadata_uuid: c524d3dd-536e-452c-b8e8-cd0e8901ea67
+  name: IMOS - Animal Tracking Facility - Acoustic Tracking - Quality Controlled Summarised Detections (2007 - ongoing)
+  logical_datasets:
+  - name: IMOS - Animal Tracking Facility - Acoustic Tracking - Quality Controlled Summarised Detections (2007 - ongoing)
+    physical_datasets:
+    - type: object
+      format: csv
+      store:
+        type: s3
+        bucket: imos-data
+        region: ap-southeast-2
+      patterns:
+      - ^IMOS/AATAMS/acoustic_detections_QC_summary/.*\.csv$
+      time_coverage_field_name: date_hour_UTC
+      geospatial_lat_field_name: receiver_deployment_latitude
+      geospatial_lon_field_name: receiver_deployment_longitude
   tags:
   - ANIMAL_TRACKING
 - metadata_uuid: 6da0e82d-65bd-446c-ab84-8a6dd155e5be

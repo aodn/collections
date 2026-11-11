@@ -10,3 +10,6 @@ class BasePhysicalDataset(pydantic.BaseModel):
         default=None,
         description="Optional human-readable physical dataset name.",
     )
+    time_coverage_field_name: str | None = pydantic.Field(default=None)
+    geospatial_lat_field_name: str | None = pydantic.Field(default=None)
+    geospatial_lon_field_name: str | None = pydantic.Field(default=None)
