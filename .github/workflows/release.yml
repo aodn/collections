@@ -30,6 +30,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
 
   checks:
+    needs: validate_tag
     uses: ./.github/workflows/checks.yml
 
   release:
