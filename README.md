@@ -1,28 +1,12 @@
-# flow-template
-Template github repository for developing deployable flows.
+# `collections`
+Versioned controlled collections metadata.
 
-## Prefect
-### Initialisation
-Run the init command to initialise pre-commit and the virtual environment:
-```bash
-make init
+## Quickstart
+```python
+from aodn_collections import CATALOG_V1
+
+print(CATALOG_V1.as_table())
 ```
-
-Additionally the
-### Versioning
-Prefect is added as a dependency to the [pyproject.toml](./pyproject.toml) by default.
-
-To constrain the Prefect versions, modify the `constraint-dependencies`, eg:
-
-```toml
-[tool.uv]
-constraint-dependencies = [
-    "prefect==3.7.5",
-    "prefect-aws==0.7.9",
-]
-```
-
-TODO: Have a single source of truth for the required prefect version requiremnts that causes re-builds when updated, potentially from `dataflow-orchestration`
 
 ## Project Tooling: `uv`
 `uv` is the package management tool of choice.
