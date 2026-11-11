@@ -60,9 +60,6 @@ jobs:
           CATALOG_V1.as_table().write_parquet('dist/catalog_v1.parquet')
           "
 
-      - name: Generate Catalogs YAML Artifact
-        run: cp -r src/aodn_collections/catalogs dist/
-
       - name: Create GitHub Release
         run: |
           TAG="${{ needs.validate_tag.outputs.tag }}"
