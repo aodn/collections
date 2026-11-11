@@ -1,0 +1,42 @@
+[project]
+name = "flow"
+dynamic = ["version"]
+description = "Add your description here"
+readme = "README.md"
+authors = []
+requires-python = ">=3.12"
+dependencies = [
+    "prefect",
+    "prefect-aws",
+]
+
+[tool.uv]
+constraint-dependencies = [
+    "prefect==3.7.5",
+    "prefect-aws==0.7.9",
+]
+
+[project.scripts]
+flow = "flow:main"
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.6.0",
+    "pytest>=9.1.1",
+]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.pytest.ini_options]
+filterwarnings = ["ignore:Logger 'prefect.*' attempted to send logs"]
+
+[tool.ruff.lint]
+extend-select = ["I"]
+
+[tool.prefect]
+home = ".prefect"
