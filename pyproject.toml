@@ -23,5 +23,6 @@ extend-select = ["I"]
 
 [dependency-groups]
 dev = [
+    "pre-commit>=4.7.0",
     "pytest>=9.2.0",
 ]
