@@ -1,9 +1,6 @@
 name: Release
 
 on:
-  push:
-    tags:
-      - "v*.*.*"
   workflow_dispatch:
     inputs:
       tag:
@@ -11,17 +8,16 @@ on:
         required: true
 
 jobs:
-
   validate_tag:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-
+    outputs:
+      tag: ${{ github.event.inputs.tag }}
     steps:
-
       - name: Ensure tag does not already exist
         run: |
-          TAG="${{ inputs.tag }}"
+          TAG="${{ github.event.inputs.tag }}"
           if gh api "/repos/${{ github.repository }}/git/ref/tags/${TAG}" >/dev/null 2>&1; then
             echo "::error::Tag ${TAG} already exists. Choose a different tag."
             exit 1
@@ -30,18 +26,16 @@ jobs:
           GH_TOKEN: ${{ github.token }}
 
   checks:
-    needs: validate_tag
     uses: ./.github/workflows/checks.yml
 
   release:
-    needs: checks
+    needs: [validate_tag, checks]
     runs-on: ubuntu-latest
     permissions:
       contents: write
       packages: write
 
     steps:
-
       - uses: actions/checkout@v4
       
       - name: Read Project Name
@@ -59,7 +53,6 @@ jobs:
       - name: Build python wheel/sdist
         run: uv build
 
-
       - name: Generate Catalog Parquet Artifact
         run: |
           uv run --with polars python -c "
@@ -71,6 +64,7 @@ jobs:
 
       - name: Create GitHub Release
         run: |
+          TAG="${{ needs.validate_tag.outputs.tag }}"
           gh release create "$TAG" \
             dist/* \
             --generate-notes \
