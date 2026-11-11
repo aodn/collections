@@ -67,7 +67,6 @@ jobs:
           from aodn_collections import CATALOG_V1
           df = CATALOG_V1.as_table()
           df.write_parquet('dist/catalog_v1.parquet')
-          df.write_csv('dist/catalog_v1.csv')
           "
 
       - name: Create GitHub Release
