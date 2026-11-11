@@ -1,0 +1,22 @@
+name: imos-data
+collections:
+- metadata_uuid: 95c09bad-1847-48f0-9ed7-1ba36e7abb8d
+  name: IMOS - New Technology Proving - Low Cost Wave Buoys
+  logical_datasets:
+  - name: IMOS - New Technology Proving - Low Cost Wave Buoys
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/NTP/Low_Cost_Wave_Buoy_Technology/.*\.nc$
+  tags:
+  - NTP
+- metadata_uuid: 1f319669-d6a3-4a0d-bf4d-819d2505502f
+  name: IMOS - New Technology Proving - Profiling Moorings Evaluation
+  logical_datasets:
+  - name: IMOS - New Technology Proving - Profiling Moorings Evaluation
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/NTP/Profiling_Moorings/.*\.nc$
+  tags:
+  - NTP

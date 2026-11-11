@@ -1,0 +1,77 @@
+name: imos-data
+collections:
+- metadata_uuid: 2a5739e7-0cb8-444a-b83b-b2bc841b0ce8
+  name: 'Australian Search and Rescue Region: Vessel Tracking - Aggregated data product
+    (2012 - ongoing) (NESP MaC 5.9, IMOS)'
+  logical_datasets:
+  - name: 'Australian Search and Rescue Region: Vessel Tracking - Aggregated data
+      product (2012 - ongoing) (NESP MaC 5.9, IMOS)'
+    physical_datasets:
+    - type: parquet
+      store:
+        type: s3
+        bucket: aodn-cloud-optimised
+        region: ap-southeast-2
+      key: aggregated_amsa_nonqc.parquet
+  tags:
+  - AMSA
+- metadata_uuid: b85f6b58-636a-4a6e-aca4-c90999d7f424
+  name: Dugong aerial survey observations in Northern Australian - Aggregated data
+    product (1984 - ongoing) (NESP MaC 5.9, IMOS)
+  logical_datasets:
+  - name: Dugong aerial survey observations in Northern Australian - Aggregated data
+      product (1984 - ongoing) (NESP MaC 5.9, IMOS)
+    physical_datasets:
+    - type: parquet
+      store:
+        type: s3
+        bucket: aodn-cloud-optimised
+        region: ap-southeast-2
+      key: aggregated_dugong_nonqc.parquet
+  tags:
+  - dugong
+- metadata_uuid: 20be281d-dfb2-4868-b690-c889a23b5714
+  name: IMOS - Understanding of Marine Imagery (UMI) Sub-Facility - Australian region
+    - Aggregated kelp data product (2008 - ongoing)
+  logical_datasets:
+  - name: IMOS - Understanding of Marine Imagery (UMI) Sub-Facility - Australian region
+      - Aggregated kelp data product (2008 - ongoing)
+    physical_datasets:
+    - type: parquet
+      store:
+        type: s3
+        bucket: aodn-cloud-optimised
+        region: ap-southeast-2
+      key: aggregated_kelp_nonqc.parquet
+  tags:
+  - kelp
+- metadata_uuid: ec2c0ef9-3645-4ded-b617-c8297f6eb250
+  name: Australasian Seabird Occurrences (including migratory species) - Aggregated
+    data product (1939 - ongoing) (NESP MaC 5.9, IMOS)
+  logical_datasets:
+  - name: Australasian Seabird Occurrences (including migratory species) - Aggregated
+      data product (1939 - ongoing) (NESP MaC 5.9, IMOS)
+    physical_datasets:
+    - type: parquet
+      store:
+        type: s3
+        bucket: aodn-cloud-optimised
+        region: ap-southeast-2
+      key: aggregated_seabird_nonqc.parquet
+  tags:
+  - seabird
+- metadata_uuid: 009a1131-efc1-4a61-8f90-cf289e7c043d
+  name: Australian Seagrass Occurrence - Aggregated data product (1967 - ongoing)
+    (NESP MaC 5.9, IMOS)
+  logical_datasets:
+  - name: Australian Seagrass Occurrence - Aggregated data product (1967 - ongoing)
+      (NESP MaC 5.9, IMOS)
+    physical_datasets:
+    - type: parquet
+      store:
+        type: s3
+        bucket: aodn-cloud-optimised
+        region: ap-southeast-2
+      key: aggregated_seagrass_nonqc.parquet
+  tags:
+  - seagrass

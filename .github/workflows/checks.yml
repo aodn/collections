@@ -1,11 +1,12 @@
-name: CI
+name: checks
 
 on:
+  workflow_call:
   pull_request:
-    branches: [main, feature/prefect]
+    branches: [main]
 
 jobs:
-  test:
+  checks:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -16,9 +17,10 @@ jobs:
 
       - name: Lint
         run: |
-          uv sync --group dev
-          uv run ruff check --extend-select I
-          uv run ruff format --check
+          uvx ruff check --extend-select I
+          uvx ruff format --check
 
       - name: Test
-        run: uv run pytest tests/ -v
+        run: |
+          uv sync --group dev
+          uv run pytest tests/ -v

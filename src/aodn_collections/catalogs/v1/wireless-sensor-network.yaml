@@ -1,0 +1,12 @@
+name: imos-data
+collections:
+- metadata_uuid: 4260aa0a-0d0a-4dd0-9ebc-74d2bf937e21
+  name: IMOS - Wireless Sensor Networks Facility
+  logical_datasets:
+  - name: IMOS - Wireless Sensor Networks Facility
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/FAIMMS/.*\.nc$
+  tags:
+  - FAIMMS

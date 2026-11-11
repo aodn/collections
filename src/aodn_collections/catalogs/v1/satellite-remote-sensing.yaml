@@ -1,0 +1,1003 @@
+name: imos-data
+collections:
+- metadata_uuid: e1f2476a-b801-4a1f-9fbe-727b4f76f726
+  name: IMOS - AusTemp - Degree Heating Days product
+  logical_datasets:
+  - name: IMOS - AusTemp - Degree Heating Days product
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/AusTemp/dhd/.*\.nc$
+  tags:
+  - SRS
+  - AusTemp
+- metadata_uuid: 2ffccdad-1197-4e41-b412-a9033517cfb2
+  name: IMOS - AusTemp - Heat stress and marine heatwave and cold-spell monitoring
+    metrics for the Australian Coast
+  logical_datasets:
+  - name: IMOS - AusTemp - Heat stress and marine heatwave and cold-spell monitoring
+      metrics for the Australian Coast
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/AusTemp/Marine-Heatwave/.*\.nc$
+  tags:
+  - SRS
+  - AusTemp
+- metadata_uuid: 62f6b449-90dc-45bf-8acb-ae52e8a58c5c
+  name: IMOS - AusTemp - Sea Surface Temperature
+  logical_datasets:
+  - name: IMOS - AusTemp - Sea Surface Temperature
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/AusTemp/ssta/.*\.nc$
+  tags:
+  - SRS
+  - AusTemp
+- metadata_uuid: 43ac4663-c8de-4eb0-9711-3da65cbecdd3
+  name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Chlorophyll-a concentration
+    (Carder model)
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Chlorophyll-a concentration
+      (Carder model)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/aqua/P1D/.*chl_carder\.nc$
+  tags:
+  - SRS
+  - aqua
+- metadata_uuid: f73daf07-eb81-4995-a72a-ca903834509f
+  name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Chlorophyll-a concentration
+    (GSM model)
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Chlorophyll-a concentration
+      (GSM model)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/aqua/P1D/.*aust\.chl_gsm\.nc$
+  tags:
+  - SRS
+  - aqua
+- metadata_uuid: d7a14921-8f3f-4522-9a54-e7d1df969c8a
+  name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Chlorophyll-a concentration
+    OC3 model)
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Chlorophyll-a concentration
+      OC3 model)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/aqua/P1D/.*chl_oc3\.nc$
+  tags:
+  - SRS
+  - aqua
+- metadata_uuid: 24055e3a-94e5-40bb-b97f-7519f0482d6a
+  name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Chlorophyll-a concentration
+    (OCI model)
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Chlorophyll-a concentration
+      (OCI model)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/aqua/P1D/.*chl_oci\.nc$
+  tags:
+  - SRS
+- metadata_uuid: a8632154-b8e5-493d-acd4-e458fae3ae26
+  name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Diffuse attenuation coefficient
+    (k490)
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Diffuse attenuation coefficient
+      (k490)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/aqua/P1D/.*K_490\.nc$
+  tags:
+  - SRS
+  - aqua
+- metadata_uuid: 9fde091c-9d38-4b2f-ba23-c262c21a41a2
+  name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Nanoplankton fraction (OC3
+    model and Brewin et al 2012 algorithm)
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Nanoplankton fraction
+      (OC3 model and Brewin et al 2012 algorithm)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/aqua/P1D/.*aust\.nanop_brewin2012in\.nc$
+  tags:
+  - SRS
+  - aqua
+- metadata_uuid: 27cc65c0-d453-4ba3-a0d6-55e4449fee8c
+  name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Net Primary Productivity
+    (GSM model and Eppley-VGPM algorithm)
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Net Primary Productivity
+      (GSM model and Eppley-VGPM algorithm)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/aqua/P1D/.*aust\.npp_vgpm_eppley_gsm\.nc$
+  tags:
+  - SRS
+  - aqua
+- metadata_uuid: b35b829c-9149-46c6-9e25-d0fd03463280
+  name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Net Primary Productivity
+    (OC3 model and Eppley-VGPM algorithm)
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Net Primary Productivity
+      (OC3 model and Eppley-VGPM algorithm)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/aqua/P1D/.*aust\.npp_vgpm_eppley_oc3\.nc$
+  tags:
+  - SRS
+  - aqua
+- metadata_uuid: 468f550b-bbd8-42b1-91b5-313d5898d9e6
+  name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Ocean Colour - SST
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Ocean Colour - SST
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/aqua/P1D/.*\.aust\.sst\.nc$
+  tags:
+  - SRS
+  - aqua
+  - sst
+- metadata_uuid: 60e57a2e-f88c-4b18-a3a1-1164c6259a10
+  name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Optical Water Type (Moore
+    et al 2009 algorithm)
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Optical Water Type (Moore
+      et al 2009 algorithm)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/aqua/P1D/.*\.aust\.owtd_csiro\.nc$
+  tags:
+  - SRS
+  - aqua
+- metadata_uuid: bc428d0b-eff7-41b9-8d4c-10e666ee1312
+  name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Picoplankton fraction (OC3
+    model and Brewin et al 2012 algorithm)
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Picoplankton fraction
+      (OC3 model and Brewin et al 2012 algorithm)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/aquaP1D/.*\.aust\.picop_brewin2012in\.nc$
+  tags:
+  - SRS
+  - aqua
+- metadata_uuid: ad4d6908-3a36-4991-996a-5b00ac162794
+  name: IMOS - Satellite Remote Sensing - NOAA20 - 01 day - Chlorophyll-a concentration
+    (GSM model)
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - NOAA20 - 01 day - Chlorophyll-a concentration
+      (GSM model)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/noaa20/P1D/.*chl_gsm\.nc$
+  tags:
+  - SRS
+  - noaa20
+  - gsm
+- metadata_uuid: 77f46a04-f07d-4968-a5f9-1da8df9706a7
+  name: IMOS - Satellite Remote Sensing - NOAA20 - 01 day - Chlorophyll-a concentration
+    (OC3 model)
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - NOAA20 - 01 day - Chlorophyll-a concentration
+      (OC3 model)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/noaa20/P1D/.*chl_oc3\.nc$
+  tags:
+  - SRS
+  - noaa20
+  - oc3
+- metadata_uuid: a9e03db8-f277-45d1-821d-cfcbfe8ae6be
+  name: IMOS - Satellite Remote Sensing - NOAA20 - 01 day - Chlorophyll-a concentration
+    (OCI model)
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - NOAA20 - 01 day - Chlorophyll-a concentration
+      (OCI model)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/noaa20/P1D/.*chl_oci\.nc$
+  tags:
+  - SRS
+  - noaa20
+  - oci
+- metadata_uuid: 37751f5b-3c93-40df-9913-951df310cbc8
+  name: IMOS - Satellite Remote Sensing - NOAA20 - 01 day - Diffuse attenuation coefficient
+    (k490)
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - NOAA20 - 01 day - Diffuse attenuation
+      coefficient (k490)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/noaa20/P1D/.*K_490\.nc$
+  tags:
+  - SRS
+  - noaa20
+  - K_490
+- metadata_uuid: c24d0593-2c53-47d3-a6d1-2e5456dd7e16
+  name: IMOS - Satellite Remote Sensing - NOAA20 - 01 day - Ocean Colour - SST
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - NOAA20 - 01 day - Ocean Colour - SST
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/noaa20/P1D/.*\.nc$
+  tags:
+  - SRS
+  - noaa20
+- metadata_uuid: 5f359ca7-396a-4c1a-8388-77a50ad39859
+  name: IMOS - Satellite Remote Sensing - NOAA20 - 01 day - Optical Water Type (Moore
+    et al 2009 algorithm)
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - NOAA20 - 01 day - Optical Water Type (Moore
+      et al 2009 algorithm)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/noaa20/P1D/.*aust\.owtd_csiro\.nc$
+  tags:
+  - SRS
+  - noaa20
+  - owtd_csiro
+- metadata_uuid: 97b9fe73-ee44-437f-b2ae-5b8613f81042
+  name: IMOS - Satellite Remote Sensing - Ocean Colour - Bio Optical Database of Australian
+    Waters
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - Ocean Colour - Bio Optical Database of
+      Australian Waters
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/BODBAW/.*absorption.*\.nc$
+      - ^IMOS/SRS/OC/BODBAW/.*backscattering.*\.nc$
+      - ^IMOS/SRS/OC/BODBAW/.*pigment.*\.nc$
+      - ^IMOS/SRS/OC/BODBAW/.*suspended_matter.*\.nc$
+  tags:
+  - SRS
+  - BODBAW
+- metadata_uuid: 28f8bfed-ca6a-472a-84e4-42563ce4df3f
+  name: IMOS - Satellite Remote Sensing - Ocean Colour - Ships of Opportunity - Radiometer
+    Sub-Facility
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - Ocean Colour - Ships of Opportunity -
+      Radiometer Sub-Facility
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/radiometer/VMQ9273_Solander/.*FV01.*\.nc$
+      - ^IMOS/SRS/OC/radiometer/VLHJ_Southern-Surveyor/.*FV01.*\.nc$
+      - ^IMOS/SRS/OC/radiometer/.*FV02.*\.nc$
+  tags:
+  - SRS
+  - radiance
+- metadata_uuid: 4ac6bf81-cd37-4611-8da8-4d5ae5e2bda3
+  name: IMOS - Satellite Remote Sensing - Ocean Colour Sub-Facility - Lucinda Jetty
+    Coastal Observatory (LJCO)
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - Ocean Colour Sub-Facility - Lucinda Jetty
+      Coastal Observatory (LJCO)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/LJCO/DALEC/.*FV01.*\.nc$
+      - ^IMOS/SRS/OC/LJCO/DALEC/.*FV02.*\.nc$
+      - ^IMOS/SRS/OC/LJCO/HyperOCR-daily/.*FV01.*\.nc$
+      - ^IMOS/SRS/OC/LJCO/HyperOCR-daily/.*FV02.*\.nc$
+      - ^IMOS/SRS/OC/LJCO/HyperOCR-hourly/.*FV01.*\.nc$
+      - ^IMOS/SRS/OC/LJCO/HyperOCR-hourly/.*FV02.*\.nc$
+      - ^IMOS/SRS/OC/LJCO/ACS-daily/.*\.nc$
+      - ^IMOS/SRS/OC/LJCO/ACS-hourly/.*\.nc$
+      - ^IMOS/SRS/OC/LJCO/BB9-daily/.*\.nc$
+      - ^IMOS/SRS/OC/LJCO/BB9-hourly/.*\.nc$
+      - ^IMOS/SRS/OC/LJCO/EcoTriplet-daily/.*\.nc$
+      - ^IMOS/SRS/OC/LJCO/EcoTriplet-hourly/.*\.nc$
+      - ^IMOS/SRS/OC/LJCO/WQM-daily/.*\.nc$
+      - ^IMOS/SRS/OC/LJCO/WQM-hourly/.*\.nc$
+  tags:
+  - SRS
+  - LJCO
+- metadata_uuid: ce859887-bdf0-4eb0-acf2-80d38af4c85c
+  name: 'Satellite Remote Sensing - Satellite Contributed Ocean Colour - MODIS - Aqua
+    Chlorophyll Concentration in the Southern Ocean: Monthly, Johnson et al 2013'
+  logical_datasets:
+  - name: 'Satellite Remote Sensing - Satellite Contributed Ocean Colour - MODIS -
+      Aqua Chlorophyll Concentration in the Southern Ocean: Monthly, Johnson et al
+      2013'
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/contributed/SO-Johnson/chl/1m/aqua/.*\.nc$
+  tags:
+  - SRS
+  - aqua
+  - chl
+- metadata_uuid: 54023994-e1aa-479d-a693-c18dfc57a175
+  name: 'Satellite Remote Sensing - Satellite Contributed Ocean Colour - MODIS - Aqua
+    Chlorophyll Concentration in the Southern Ocean: Weekly, Johnson et al 2013'
+  logical_datasets:
+  - name: 'Satellite Remote Sensing - Satellite Contributed Ocean Colour - MODIS -
+      Aqua Chlorophyll Concentration in the Southern Ocean: Weekly, Johnson et al
+      2013'
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/contributed/SO-Johnson/chl/8d/aqua/.*\.nc$
+  tags:
+  - SRS
+  - aqua
+  - chl
+- metadata_uuid: 10fcb776-d331-4a04-ac1f-4a48fa050385
+  name: 'Satellite Remote Sensing - Satellite Contributed Ocean Colour - SeaWIFS Chlorophyll
+    Concentration in the Southern Ocean: Monthly, Johnson et al 2013'
+  logical_datasets:
+  - name: 'Satellite Remote Sensing - Satellite Contributed Ocean Colour - SeaWIFS
+      Chlorophyll Concentration in the Southern Ocean: Monthly, Johnson et al 2013'
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/contributed/SO-Johnson/chl/1m/seawifs/.*\.nc$
+  tags:
+  - SRS
+  - seawifs
+  - chl
+- metadata_uuid: bd2a812b-d76d-42eb-9654-9f2e13d305ff
+  name: 'Satellite Remote Sensing - Satellite Contributed Ocean Colour - SeaWIFS Chlorophyll
+    Concentration in the Southern Ocean: Weekly, Johnson et al 2013'
+  logical_datasets:
+  - name: 'Satellite Remote Sensing - Satellite Contributed Ocean Colour - SeaWIFS
+      Chlorophyll Concentration in the Southern Ocean: Weekly, Johnson et al 2013'
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/contributed/SO-Johnson/chl/8d/seawifs/.*\.nc$
+  tags:
+  - SRS
+  - seawifs
+  - chl
+- metadata_uuid: 78d588ed-79dd-47e2-b806-d39025194e7e
+  name: IMOS - Satellite Remote Sensing - Satellite Altimetry Calibration and Validation
+    Sub-Facility
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - Satellite Altimetry Calibration and Validation
+      Sub-Facility
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/ALTIMETRY/calibration_validation/.*\.nc$
+  tags:
+  - SRS
+  - ALTIMETRY
+- metadata_uuid: 06d2fff4-8e2c-4bd7-b98f-cd98e588df6f
+  name: IMOS - Satellite Remote Sensing - SST - L3C - Himawari-8 - 4 hour - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3C - Himawari-8 - 4 hour - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3C-4h/h08/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+  - himawari
+- metadata_uuid: 72b65fb8-84e1-4a56-b32c-7f15970903d2
+  name: IMOS - Satellite Remote Sensing - SST - L3C - Himawari-8 - 1 day - night time
+    - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3C - Himawari-8 - 1 day - night
+      time - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3C-1d/ngt/h08/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+  - himawari
+- metadata_uuid: 09d9ce5c-8224-4a59-97df-30a4a9e7038b
+  name: IMOS - Satellite Remote Sensing - SST - L3C - Himawari-8 - 1 hour - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3C - Himawari-8 - 1 hour - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3C-1h/h08/.*1h\.nc$
+  tags:
+  - SRS
+  - ghrsst
+  - himawari
+- metadata_uuid: e6782131-821c-4237-b2a9-27c6aaa8608c
+  name: IMOS - Satellite Remote Sensing - SST - L3C - NOAA 19 - 1 day - day time -
+    Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3C - NOAA 19 - 1 day - day time
+      - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3C-1d/day/n19/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+  - noaa19
+- metadata_uuid: be9103bd-dbbb-42a8-949d-92e8543a4d92
+  name: IMOS - Satellite Remote Sensing - SST - L3C - NOAA 19 - 1 day - day time -
+    Southern Ocean
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3C - NOAA 19 - 1 day - day time
+      - Southern Ocean
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3C-1dS/day/n19/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+  - noaa19
+- metadata_uuid: 46ebc1a9-c503-4435-b85c-11fe16176c8d
+  name: IMOS - Satellite Remote Sensing - SST - L3C - NOAA 19 - 1 day - night time
+    - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3C - NOAA 19 - 1 day - night time
+      - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3C-1d/ngt/n19/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+  - noaa19
+- metadata_uuid: 91495e9a-6590-4fb9-bb63-0901a8a4b7b1
+  name: IMOS - Satellite Remote Sensing - SST - L3C - NOAA 19 - 1 day - night time
+    - Southern Ocean
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3C - NOAA 19 - 1 day - night time
+      - Southern Ocean
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3C-1dS/ngt/n19/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+  - noaa19
+- metadata_uuid: bcf6a870-2591-492e-b340-931f38de5975
+  name: IMOS - Satellite Remote Sensing - SST - L3C - SNPP - 1 day - day time - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3C - SNPP - 1 day - day time -
+      Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3C-1d/day/snpp/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+  - snpp
+- metadata_uuid: a05817da-fdab-483a-a965-b26fe364ad7c
+  name: IMOS - Satellite Remote Sensing - SST - L3C - SNPP - 1 day - night time -
+    Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3C - SNPP - 1 day - night time
+      - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3C-1d/ngt/snpp/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+  - snpp
+- metadata_uuid: 7d8d046b-6002-4897-b781-04e7324d6af8
+  name: IMOS - Satellite Remote Sensing - SST - L3S - GeoPolar Multi Sensor - 1 day
+    - night time - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - GeoPolar Multi Sensor - 1
+      day - night time - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3SGM-1d/ngt/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: d7f3178d-869a-4eac-959d-71d1f5e24888
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 1 day - day and
+    night time - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 1 day - day
+      and night time - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3SM-1d/dn/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: 165a23d7-5ef3-4cab-9e02-90c8adb941dd
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Single Sensor - 1 day - day
+    and night time - Southern Ocean
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Single Sensor - 1 day - day
+      and night time - Southern Ocean
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3S-1dS/dn/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: 52ad55a5-b537-4e10-8a81-22d9317c81f2
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 1 day - day time
+    - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 1 day - day
+      time - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3SM-1d/day/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: d3e3bce3-adb4-433a-a192-93abc91899d3
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 1 day - night
+    time - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 1 day - night
+      time - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3SM-1d/ngt/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: 73e6608c-cbf5-4a01-9c95-1f137de6cbac
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 1 month - day
+    and night time - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 1 month - day
+      and night time - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3SM-1m/dn/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: e3b2531b-a662-43de-9a8b-8e2b385267b3
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 1 month - day
+    time - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 1 month - day
+      time - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3SM-1m/day/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: 1aa787da-a9ba-494a-ae22-0c3eee2491e1
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 1 month - night
+    time - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 1 month - night
+      time - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3SM-1m/ngt/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: 4cbb9eeb-9ed3-4079-a180-2293a2c219b9
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 3 day - day and
+    night time - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 3 day - day
+      and night time - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3SM-3d/dn/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: 08e04227-4da1-479b-bec1-06ee27a69a40
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 3 day - day time
+    - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 3 day - day
+      time - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3SM-3d/day/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: b28ab00c-06f9-4cef-9053-4ff3bf537bb7
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 3 day - night
+    time - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 3 day - night
+      time - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3SM-3d/ngt/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: 95b81267-bad2-4939-8559-45b0d0c6f2e9
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 6 day - day and
+    night time - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 6 day - day
+      and night time - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3SM-6d/dn/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: f07c3d3f-547b-4818-9d2f-12e872c7e158
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 6 day - day time
+    - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 6 day - day
+      time - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3SM-6d/day/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: e1908591-b3cf-42aa-a32f-424322b28165
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 6 day - night
+    time - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 6 day - night
+      time - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3SM-6d/ngt/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: a136eee7-a990-4c06-a4f6-915657a2464e
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Single Sensor - 1 day - day
+    and night time - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Single Sensor - 1 day - day
+      and night time - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3S-1d/dn/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: 8bd3fe33-fd98-4307-ad23-424ad9a2907b
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Single Sensor - 1 day - day
+    time - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Single Sensor - 1 day - day
+      time - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3S-1d/day/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: aaad092c-c3af-42e6-87e0-bdaef945f522
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Single Sensor - 1 day - night
+    time - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Single Sensor - 1 day - night
+      time - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3S-1d/ngt/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: d6f49c4a-8b75-4d05-acd4-b9c085bf4de0
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Single Sensor - 1 month - day
+    and night time - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Single Sensor - 1 month -
+      day and night time - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3S-1m/dn/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: a05d8ceb-ab0c-4bad-8126-d16d535e73c1
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Single Sensor - 1 month - day
+    and night time - Southern Ocean
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Single Sensor - 1 month -
+      day and night time - Southern Ocean
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3S-1mS/dn/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: b8e9f613-9611-4692-a958-07f100d2c763
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Single Sensor - 1 month - day
+    time - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Single Sensor - 1 month -
+      day time - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3S-1m/day/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: d9618fb2-1a71-4afd-b1c8-56a6871b224a
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Single Sensor - 1 month - night
+    time - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Single Sensor - 1 month -
+      night time - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3S-1m/ngt/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: 023ae12a-8c0c-4abc-997a-7884f9fec9cd
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Single Sensor - 6 day - day
+    and night time - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Single Sensor - 6 day - day
+      and night time - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3S-6d/dn/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: a5cad244-c33e-4083-b8a9-09ef59500b3d
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Single Sensor - 6 day - day
+    time - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Single Sensor - 6 day - day
+      time - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3S-6d/day/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: f9d6616a-f359-4418-979a-e7b89b5b9086
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Single Sensor - 6 day - night
+    time - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Single Sensor - 6 day - night
+      time - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3S-6d/ngt/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: 579fc1ac-6ee5-40e2-9170-6a857e9b40da
+  name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 1 month - day
+    and night time - Southern Ocean
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L3S - Multi Sensor - 1 month - day
+      and night time - Southern Ocean
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L3SM-1mS/dn/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+- metadata_uuid: 2d496463-600c-465a-84a1-8a4ab76bd505
+  name: IMOS - Satellite Remote Sensing - SST - L4 - GAMSSA - World
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L4 - GAMSSA - World
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L4/GAMSSA/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+  - GAMSSA
+- metadata_uuid: a4170ca8-0942-4d13-bdb8-ad4718ce14bb
+  name: IMOS - Satellite Remote Sensing - SST - L4 - RAMSSA - Australia
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SST - L4 - RAMSSA - Australia
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/SST/ghrsst/L4/RAMSSA/.*\.nc$
+  tags:
+  - SRS
+  - ghrsst
+  - RAMSSA
+- metadata_uuid: 6447f562-9063-4879-8598-ca0b5c4e0175
+  name: IMOS - Satellite Remote Sensing - SNPP - 01 day - Chlorophyll-a concentration
+    (GSM model)
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SNPP - 01 day - Chlorophyll-a concentration
+      (GSM model)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/snpp/P1D/.*chl_gsm\.nc$
+  tags:
+  - SRS
+  - snpp
+  - gsm
+- metadata_uuid: d222bd3f-b1a8-46f1-b462-90e44c5d9b44
+  name: IMOS - Satellite Remote Sensing - SNPP - 01 day - Chlorophyll-a concentration
+    (OC3 model)
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SNPP - 01 day - Chlorophyll-a concentration
+      (OC3 model)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/snpp/P1D/.*chl_oc3\.nc$
+  tags:
+  - SRS
+  - snpp
+  - oc3
+- metadata_uuid: d7f9eb3f-b81e-4421-8c75-761ffb33db5d
+  name: IMOS - Satellite Remote Sensing - SNPP - 01 day - Chlorophyll-a concentration
+    (OCI model)
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SNPP - 01 day - Chlorophyll-a concentration
+      (OCI model)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/snpp/P1D/.*chl_oci\.nc$
+  tags:
+  - SRS
+  - snpp
+  - oci
+- metadata_uuid: 697aa9e7-bf24-4f9e-9950-d5cfd78f1b35
+  name: IMOS - Satellite Remote Sensing - SNPP - 01 day - Diffuse attenuation coefficient
+    (k490)
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SNPP - 01 day - Diffuse attenuation coefficient
+      (k490)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/snpp/P1D/.*K_490\.nc$
+  tags:
+  - SRS
+  - snpp
+  - K_490
+- metadata_uuid: 8e00907f-716d-4080-b212-534fcd78a602
+  name: IMOS - Satellite Remote Sensing - SNPP - 01 day - Ocean Colour - SST
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SNPP - 01 day - Ocean Colour - SST
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/snpp/P1D/.*\.aust\.sst\.nc$
+  tags:
+  - SRS
+  - snpp
+  - sst
+- metadata_uuid: 8f44f09a-07a3-4f9b-ba26-2fc4983fef69
+  name: IMOS - Satellite Remote Sensing - SNPP - 01 day - Optical Water Type (Moore
+    et al 2009 algorithm)
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - SNPP - 01 day - Optical Water Type (Moore
+      et al 2009 algorithm)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/OC/gridded/snpp/P1D/.*aust\.owtd_csiro\.nc$
+  tags:
+  - SRS
+  - snpp
+  - owtd_csiro
+- metadata_uuid: 91ae1b2f-39e4-4d30-a853-5deb774614ca
+  name: IMOS - Satellite Remote Sensing - Surface Waves Sub-Facility - altimeter wave/wind
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - Surface Waves Sub-Facility - altimeter
+      wave/wind
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/Surface-Waves/Wave-Wind-Altimetry-DM00/.*\.nc$
+  tags:
+  - SRS
+  - ALTIMETRY
+- metadata_uuid: 4680a155-07af-46ac-b026-151c4ed4f6d5
+  name: IMOS - Satellite Remote Sensing - Surface Waves Sub-Facility - SAR wave -
+    Delayed mode data
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - Surface Waves Sub-Facility - SAR wave
+      - Delayed mode data
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/Surface-Waves/SAR/DELAYED/.*\.nc$
+  tags:
+  - SRS
+  - SAR
+- metadata_uuid: d833de94-313d-41bd-9278-bc5813e29949
+  name: IMOS - Satellite Remote Sensing - Surface Waves Sub-Facility - SAR wave -
+    Near real-time data
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - Surface Waves Sub-Facility - SAR wave
+      - Near real-time data
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/Surface-Waves/SAR/REALTIME/.*\.nc$
+  tags:
+  - SRS
+  - SAR
+- metadata_uuid: b02b929f-2caf-45d4-ac60-d4632b7ca0ca
+  name: IMOS - Satellite Remote Sensing - Surface Waves Sub-Facility - SAR wind -
+    Delayed mode data
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - Surface Waves Sub-Facility - SAR wind
+      - Delayed mode data
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/Surface-Waves/SAR_Wind/DELAYED/GRIDDED/.*\.nc$
+  tags:
+  - SRS
+  - SAR_Wind
+- metadata_uuid: fb70e5a7-7dcc-41fc-9a9d-9de41ab21e50
+  name: IMOS - Satellite Remote Sensing - Surface Waves Sub-Facility - scatterometer
+    wind
+  logical_datasets:
+  - name: IMOS - Satellite Remote Sensing - Surface Waves Sub-Facility - scatterometer
+      wind
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SRS/Surface-Waves/Wind-Scatterometry-DM00/.*\.nc$
+  tags:
+  - SRS
+  - SAR_Wind_Scatterometry

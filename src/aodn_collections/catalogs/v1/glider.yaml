@@ -1,0 +1,23 @@
+name: imos-data
+collections:
+- metadata_uuid: c317b0fe-02e8-4ff9-96c9-563fd58e82ac
+  name: IMOS - Ocean Gliders - delayed mode glider deployments
+  logical_datasets:
+  - name: IMOS - Ocean Gliders - delayed mode glider deployments
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ANFOG/slocum_glider/.*\.nc$
+      - ^IMOS/ANFOG/seaglider/.*\.nc$
+  tags:
+  - ANFOG
+- metadata_uuid: a681fdba-c6d9-44ab-90b9-113b0ed03536
+  name: IMOS - Ocean Gliders - Real-time glider deployments
+  logical_datasets:
+  - name: IMOS - Ocean Gliders - Real-time glider deployments
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ANFOG/REALTIME/slocum_glider/.*\.nc$
+  tags:
+  - ANFOG

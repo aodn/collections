@@ -1,0 +1,22 @@
+name: imos-data
+collections:
+- metadata_uuid: 2223b7f2-4bac-4ff1-9b1e-aae9ac58deef
+  name: IMOS - Argo Profiles - biogeochemical data
+  logical_datasets:
+  - name: IMOS - Argo Profiles - biogeochemical data
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/Argo/dac/.*\.nc$
+  tags:
+  - ARGO
+- metadata_uuid: 4402cb50-e20a-44ee-93e6-4728259250d2
+  name: IMOS - Argo Profiles - core data
+  logical_datasets:
+  - name: IMOS - Argo Profiles - core data
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/Argo/dac/.*\.nc$
+  tags:
+  - ARGO

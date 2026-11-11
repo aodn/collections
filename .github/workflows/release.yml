@@ -11,7 +11,12 @@ on:
         required: true
 
 jobs:
+
+  checks:
+    uses: ./.github/workflows/checks.yml
+
   release:
+    needs: checks
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -42,25 +47,8 @@ jobs:
           python-version: "3.12"
           enable-cache: true
 
-      - name: Lint
-        run: |
-          uv sync --group dev
-          uv run ruff check --extend-select I
-          uv run ruff format --check
-
       - name: Build python wheel/sdist
         run: uv build
-
-      - name: Build and test Docker image
-        uses: docker/build-push-action@v6
-        with:
-          context: .
-          target: test
-          push: false
-          tags: ${{ steps.pyproject_name.outputs.value }}:latest,${{ steps.pyproject_name.outputs.value }}:${{ env.TAG }}
-          outputs: type=cacheonly
-          build-args: |
-            VERSION=$TAG
 
       - name: Create GitHub Release
         run: |

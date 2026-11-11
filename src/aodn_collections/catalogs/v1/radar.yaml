@@ -1,0 +1,314 @@
+name: imos-data
+collections:
+- metadata_uuid: 38dd003d-2f71-4715-bd3f-4b1cfdce391d
+  name: IMOS - Ocean Radar - Bonney Coast HF ocean radar site (South Australia, Australia)
+    - Delayed mode sea water velocity
+  logical_datasets:
+  - name: IMOS - Ocean Radar - Bonney Coast HF ocean radar site (South Australia,
+      Australia) - Delayed mode sea water velocity
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-current-map_QC/BONC/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: 4a1608ab-ebdd-4f98-93c3-15f2da87bfa0
+  name: IMOS - Ocean Radar - Bonney Coast HF ocean radar site (South Australia, Australia)
+    - Real-time sea water velocity
+  logical_datasets:
+  - name: IMOS - Ocean Radar - Bonney Coast HF ocean radar site (South Australia,
+      Australia) - Real-time sea water velocity
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-current-map_non-QC/BONC/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: 8a2d2824-0557-4110-a561-01ec35a9583d
+  name: IMOS - Ocean Radar - Capricorn Bunker Group HF ocean radar site (Great Barrier
+    Reef, Queensland, Australia) - Delayed mode sea water velocity
+  logical_datasets:
+  - name: IMOS - Ocean Radar - Capricorn Bunker Group HF ocean radar site (Great Barrier
+      Reef, Queensland, Australia) - Delayed mode sea water velocity
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-current-map_QC/CBG/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: 400a1237-af4d-45c6-a292-788cf0212522
+  name: IMOS - Ocean Radar - Capricorn Bunker Group HF ocean radar site (Great Barrier
+    Reef, Queensland, Australia) - Delayed mode wave
+  logical_datasets:
+  - name: IMOS - Ocean Radar - Capricorn Bunker Group HF ocean radar site (Great Barrier
+      Reef, Queensland, Australia) - Delayed mode wave
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-wave-site-map_QC/CBG/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: 742dc902-b300-4e3e-839f-04d03671aa09
+  name: IMOS - Ocean Radar - Capricorn Bunker Group HF ocean radar site (Great Barrier
+    Reef, Queensland, Australia) - Delayed mode wind
+  logical_datasets:
+  - name: IMOS - Ocean Radar - Capricorn Bunker Group HF ocean radar site (Great Barrier
+      Reef, Queensland, Australia) - Delayed mode wind
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-wind-map_QC/CBG/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: 422db51d-596c-4d1c-86a0-b89413c5187e
+  name: IMOS - Ocean Radar - Capricorn Bunker Group HF ocean radar site (Great Barrier
+    Reef, Queensland, Australia) - Real-time sea water velocity
+  logical_datasets:
+  - name: IMOS - Ocean Radar - Capricorn Bunker Group HF ocean radar site (Great Barrier
+      Reef, Queensland, Australia) - Real-time sea water velocity
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-current-map_non-QC/CBG/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: 85da1645-2c63-45fa-97b5-4125165b999d
+  name: IMOS - Ocean Radar - Coffs Harbour HF ocean radar site (New South Wales, Australia)
+    - Delayed mode sea water velocity
+  logical_datasets:
+  - name: IMOS - Ocean Radar - Coffs Harbour HF ocean radar site (New South Wales,
+      Australia) - Delayed mode sea water velocity
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-current-map_QC/COF/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: e32e51d9-b0a5-4b95-9906-44e0c6c8d516
+  name: IMOS - Ocean Radar - Coffs Harbour HF ocean radar site (New South Wales, Australia)
+    - Delayed mode wave
+  logical_datasets:
+  - name: IMOS - Ocean Radar - Coffs Harbour HF ocean radar site (New South Wales,
+      Australia) - Delayed mode wave
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-wave-site-map_QC/COF/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: ffe8f19c-de4a-4362-89be-7605b2dd6b8c
+  name: IMOS - Ocean Radar - Coffs Harbour HF ocean radar site (New South Wales, Australia)
+    - Delayed mode wind
+  logical_datasets:
+  - name: IMOS - Ocean Radar - Coffs Harbour HF ocean radar site (New South Wales,
+      Australia) - Delayed mode wind
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-wind-map_QC/COF/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: 82bc6673-c9cb-4afc-8b5d-0e65b097bfdc
+  name: IMOS - Ocean Radar - Coffs Harbour HF ocean radar site (New South Wales, Australia)
+    - Real-time sea water velocity
+  logical_datasets:
+  - name: IMOS - Ocean Radar - Coffs Harbour HF ocean radar site (New South Wales,
+      Australia) - Real-time sea water velocity
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-current-map_non-QC/COF/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: f7b36a1c-0936-4da6-b47f-94ed538b367e
+  name: IMOS - Ocean Radar - Coral Coast HF ocean radar site (Western Australia, Australia)
+    - Delayed mode sea water velocity
+  logical_datasets:
+  - name: IMOS - Ocean Radar - Coral Coast HF ocean radar site (Western Australia,
+      Australia) - Delayed mode sea water velocity
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-current-map_QC/CORL/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: 0dd3832a-cf67-4068-a446-a9c91c77273e
+  name: IMOS - Ocean Radar - Coral Coast HF ocean radar site (Western Australia, Australia)
+    - Real-time sea water velocity
+  logical_datasets:
+  - name: IMOS - Ocean Radar - Coral Coast HF ocean radar site (Western Australia,
+      Australia) - Real-time sea water velocity
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-current-map_non-QC/CORL/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: 6dca1f8a-8337-4551-ac4b-a2d35ec6f333
+  name: IMOS - Ocean Radar - Newcastle HF ocean radar site (New South Wales, Australia)
+    - Delayed mode sea water velocity
+  logical_datasets:
+  - name: IMOS - Ocean Radar - Newcastle HF ocean radar site (New South Wales, Australia)
+      - Delayed mode sea water velocity
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-current-map_QC/NEWC/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: e952bcee-79e7-4995-91ad-a7e6408d29ce
+  name: IMOS - Ocean Radar - Newcastle HF ocean radar site (New South Wales, Australia)
+    - Real-time sea water velocity
+  logical_datasets:
+  - name: IMOS - Ocean Radar - Newcastle HF ocean radar site (New South Wales, Australia)
+      - Real-time sea water velocity
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-current-map_non-QC/NEWC/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: 23c27e4f-c982-44e9-9ab7-71094d297549
+  name: IMOS - Ocean Radar - Northwest Shelf HF ocean radar site (Western Australia,
+    Australia) - Delayed mode sea water velocity
+  logical_datasets:
+  - name: IMOS - Ocean Radar - Northwest Shelf HF ocean radar site (Western Australia,
+      Australia) - Delayed mode sea water velocity
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-current-map_QC/NWA/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: ba9110f1-072c-4d15-8328-2091be983991
+  name: IMOS - Ocean Radar - Northwest Shelf HF ocean radar site (Western Australia,
+    Australia) - Real-time sea water velocity
+  logical_datasets:
+  - name: IMOS - Ocean Radar - Northwest Shelf HF ocean radar site (Western Australia,
+      Australia) - Real-time sea water velocity
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-current-map_non-QC/NWA/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: 028b9801-279f-427c-964b-0ffcdf310b59
+  name: IMOS - Ocean Radar - Rottnest Shelf HF ocean radar site (Western Australia,
+    Australia) - Delayed mode sea water velocity
+  logical_datasets:
+  - name: IMOS - Ocean Radar - Rottnest Shelf HF ocean radar site (Western Australia,
+      Australia) - Delayed mode sea water velocity
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-current-map_QC/ROT/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: 9c6d6a0c-4983-4cb5-b119-02c11ce6af4e
+  name: IMOS - Ocean Radar - Rottnest Shelf HF ocean radar site (Western Australia,
+    Australia) - Delayed mode wave
+  logical_datasets:
+  - name: IMOS - Ocean Radar - Rottnest Shelf HF ocean radar site (Western Australia,
+      Australia) - Delayed mode wave
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-wave-site-map_QC/ROT/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: 5ad9a6da-3f0b-4b2f-8212-48b386e1b98c
+  name: IMOS - Ocean Radar - Rottnest Shelf HF ocean radar site (Western Australia,
+    Australia) - Delayed mode wind
+  logical_datasets:
+  - name: IMOS - Ocean Radar - Rottnest Shelf HF ocean radar site (Western Australia,
+      Australia) - Delayed mode wind
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-wind-map_QC/ROT/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: 8b469535-eb48-4f1f-9612-bdf2e83cdce8
+  name: IMOS - Ocean Radar - Rottnest Shelf HF ocean radar site (Western Australia,
+    Australia) - Real-time sea water velocity
+  logical_datasets:
+  - name: IMOS - Ocean Radar - Rottnest Shelf HF ocean radar site (Western Australia,
+      Australia) - Real-time sea water velocity
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-current-map_non-QC/ROT/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: cb2e22b5-ebb9-460b-8cff-b446fe14ea2f
+  name: IMOS - Ocean Radar - South Australia Gulfs HF ocean radar site (South Australia,
+    Australia) - Delayed mode sea water velocity
+  logical_datasets:
+  - name: IMOS - Ocean Radar - South Australia Gulfs HF ocean radar site (South Australia,
+      Australia) - Delayed mode sea water velocity
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-current-map_QC/SAG/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: 19da2ce7-138f-4427-89de-a50c724f5f54
+  name: IMOS - Ocean Radar - South Australia Gulfs HF ocean radar site (South Australia,
+    Australia) - Delayed mode wave
+  logical_datasets:
+  - name: IMOS - Ocean Radar - South Australia Gulfs HF ocean radar site (South Australia,
+      Australia) - Delayed mode wave
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-wave-site-map_QC/SAG/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: db049981-3d4e-4cb2-9c4b-e697650845b9
+  name: IMOS - Ocean Radar - South Australia Gulfs HF ocean radar site (South Australia,
+    Australia) - Delayed mode wind
+  logical_datasets:
+  - name: IMOS - Ocean Radar - South Australia Gulfs HF ocean radar site (South Australia,
+      Australia) - Delayed mode wind
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-wind-map_QC/SAG/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: d83ef640-827e-4990-8c35-7c1a1aa587a9
+  name: IMOS - Ocean Radar - South Australia Gulfs HF ocean radar site (South Australia,
+    Australia) - Real-time sea water velocity
+  logical_datasets:
+  - name: IMOS - Ocean Radar - South Australia Gulfs HF ocean radar site (South Australia,
+      Australia) - Real-time sea water velocity
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-current-map_non-QC/SAG/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: 055342fc-f970-4be7-a764-8903220d42fb
+  name: IMOS - Ocean Radar - Turquoise Coast HF ocean radar site (Western Australia,
+    Australia) - Delayed mode sea water velocity
+  logical_datasets:
+  - name: IMOS - Ocean Radar - Turquoise Coast HF ocean radar site (Western Australia,
+      Australia) - Delayed mode sea water velocity
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-current-map_QC/TURQ/.*\.nc$
+  tags:
+  - ACORN
+- metadata_uuid: 52f09a23-63a2-4c14-8b3b-1fc7c8167281
+  name: IMOS - Ocean Radar - Turquoise Coast HF ocean radar site (Western Australia,
+    Australia) - Real-time sea water velocity
+  logical_datasets:
+  - name: IMOS - Ocean Radar - Turquoise Coast HF ocean radar site (Western Australia,
+      Australia) - Real-time sea water velocity
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ACORN/gridded_1h-avg-current-map_non-QC/TURQ/.*\.nc$
+  tags:
+  - ACORN

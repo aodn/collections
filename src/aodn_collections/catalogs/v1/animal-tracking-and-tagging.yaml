@@ -1,0 +1,116 @@
+name: imos-data
+collections:
+- metadata_uuid: 4a97bd11-e821-4682-8b20-cb69201f3223
+  name: IMOS - Animal Tracking Facility - Acoustic Receiver Locations
+  logical_datasets:
+  - name: IMOS - Animal Tracking Facility - Acoustic Receiver Locations
+    physical_datasets:
+    - type: object
+      patterns:
+      - TODO
+  tags:
+  - ANIMAL_TRACKING
+- metadata_uuid: 0ede6b3d-8635-472f-b91c-56a758b4e091
+  name: IMOS - Animal Tracking Facility - Acoustic Tracking - Quality Controlled Detections
+    (2007 - 2017) (SUPERSEDED BY ONGOING COLLECTION)
+  logical_datasets:
+  - name: IMOS - Animal Tracking Facility - Acoustic Tracking - Quality Controlled
+      Detections (2007 - 2017) (SUPERSEDED BY ONGOING COLLECTION)
+    physical_datasets:
+    - type: object
+      format: csv
+      store:
+        type: s3
+        bucket: imos-data
+        region: ap-southeast-2
+      patterns:
+      - ^IMOS/AATAMS/acoustic_tagging/.*\.csv$
+  tags:
+  - ANIMAL_TRACKING
+- metadata_uuid: 541d4f15-122a-443d-ab4e-2b5feb08d6a0
+  name: IMOS - Animal Tracking Facility - Acoustic Tracking - Quality Controlled Detections
+    (2007 - ongoing)
+  logical_datasets:
+  - name: IMOS - Animal Tracking Facility - Acoustic Tracking - Quality Controlled
+      Detections (2007 - ongoing)
+    physical_datasets:
+    - type: object
+      format: csv
+      store:
+        type: s3
+        bucket: imos-data
+        region: ap-southeast-2
+      patterns:
+      - ^IMOS/AATAMS/acoustic_detections_QC/.*\.csv$
+  tags:
+  - ANIMAL_TRACKING
+- metadata_uuid: 6da0e82d-65bd-446c-ab84-8a6dd155e5be
+  name: IMOS - Animal Tracking Facility - GLS tag deployments on Snow petrels (Pagodroma
+    nivea)
+  logical_datasets:
+  - name: IMOS - Animal Tracking Facility - GLS tag deployments on Snow petrels (Pagodroma
+      nivea)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/AATAMS/archival_tagging/snow_petrels/tags/.*\.csv$
+  tags:
+  - ANIMAL_TRACKING
+- metadata_uuid: 06b09398-d3d0-47dc-a54a-a745319fbece
+  name: IMOS - Animal Tracking Facility - Satellite Relay Tagging Program - Delayed
+    mode data
+  logical_datasets:
+  - name: IMOS - Animal Tracking Facility - Satellite Relay Tagging Program - Delayed
+      mode data
+    physical_datasets:
+    - type: object
+      patterns:
+      - TODO
+  tags:
+  - ANIMAL_TRACKING
+- metadata_uuid: 70f148b1-7040-4fad-944a-456413c95472
+  name: IMOS - Animal Tracking Facility - Satellite Relay Tagging Program - Delayed
+    mode data with quality-controlled locations
+  logical_datasets:
+  - name: IMOS - Animal Tracking Facility - Satellite Relay Tagging Program - Delayed
+      mode data with quality-controlled locations
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/AATAMS/satellite_tagging/ATF_Location_QC_DM/.*\.csv$
+  tags:
+  - ANIMAL_TRACKING
+- metadata_uuid: b2548767-514f-4a31-b65e-36bb894382d5
+  name: IMOS - Animal Tracking Facility - Satellite Relay Tagging Program - Near real-time
+    data with quality-controlled locations
+  logical_datasets:
+  - name: IMOS - Animal Tracking Facility - Satellite Relay Tagging Program - Near
+      real-time data with quality-controlled locations
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/AATAMS/satellite_tagging/ATF_Location_QC_NRT/.*\.csv$
+  tags:
+  - ANIMAL_TRACKING
+- metadata_uuid: 4637bd9b-8fba-4a10-bf23-26a511e17042
+  name: IMOS - Animal Tracking Facility Satellite Relay Tagging Program
+  logical_datasets:
+  - name: IMOS - Animal Tracking Facility Satellite Relay Tagging Program
+    physical_datasets:
+    - type: object
+      patterns:
+      - TODO
+  tags:
+  - ANIMAL_TRACKING
+- metadata_uuid: 95d6314c-cfc7-40ae-b439-85f14541db71
+  name: Satellite Relay Tagging Program - Southern Ocean - MEOP Quality Controlled
+    CTD Profiles
+  logical_datasets:
+  - name: Satellite Relay Tagging Program - Southern Ocean - MEOP Quality Controlled
+      CTD Profiles
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/AATAMS/satellite_tagging/MEOP_QC_CTD/.*\.nc$
+  tags:
+  - ANIMAL_TRACKING

@@ -1,0 +1,134 @@
+name: imos-data
+collections:
+- metadata_uuid: ec424e4f-0f55-41a5-a3f2-726bc4541947
+  name: IMOS - National Reef Monitoring Network Sub-Facility - Benthic cover data
+    (in situ surveys)
+  logical_datasets:
+  - name: IMOS - National Reef Monitoring Network Sub-Facility - Benthic cover data
+      (in situ surveys)
+    physical_datasets:
+    - type: object
+      format: csv
+      store:
+        type: s3
+        bucket: imos-data
+        region: ap-southeast-2
+      patterns:
+      - ^IMOS/NRMN/ep_m3_isq_public_data.csv$
+  tags:
+  - NRMN
+- metadata_uuid: 0a65be6d-1c76-49ac-a151-80acf123612c
+  name: IMOS - National Reef Monitoring Network Sub-Facility - Global benthic cover data
+    (photoquadrat image annotations)
+  logical_datasets:
+  - name: IMOS - National Reef Monitoring Network Sub-Facility - Global benthic cover data
+      (photoquadrat image annotations)
+    physical_datasets:
+    - type: object
+      format: csv
+      store:
+        type: s3
+        bucket: imos-data
+        region: ap-southeast-2
+      patterns:
+      - ^IMOS/NRMN/ep_m13_pq_scores.csv$
+  tags:
+  - NRMN
+- metadata_uuid: 9efa25cd-4da4-47b5-9385-45e3cbd11705
+  name: IMOS - National Reef Monitoring Network Sub-Facility - Global cryptobenthic
+    fish abundance
+  logical_datasets:
+  - name: IMOS - National Reef Monitoring Network Sub-Facility - Global cryptobenthic
+      fish abundance
+    physical_datasets:
+    - type: object
+      format: csv
+      store:
+        type: s3
+        bucket: imos-data
+        region: ap-southeast-2
+      patterns:
+      - ^IMOS/NRMN/ep_m2_cryptic_fish_public_data.csv$
+  tags:
+  - NRMN
+- metadata_uuid: 48cf3cb9-caa9-4633-9baa-8bba3c4d904a
+  name: IMOS - National Reef Monitoring Network Sub-Facility - Global mobile macroinvertebrate
+    abundance
+  logical_datasets:
+  - name: IMOS - National Reef Monitoring Network Sub-Facility - Global mobile macroinvertebrate
+      abundance
+    physical_datasets:
+    - type: object
+      format: csv
+      store:
+        type: s3
+        bucket: imos-data
+        region: ap-southeast-2
+      patterns:
+      - ^IMOS/NRMN/ep_m2_inverts_public_data.csv$
+  tags:
+  - NRMN
+- metadata_uuid: a73907b7-3686-4dcf-8a1d-7efc4e5ffc05
+  name: IMOS - National Reef Monitoring Network Sub-Facility - Global off-transect
+    species observations
+  logical_datasets:
+  - name: IMOS - National Reef Monitoring Network Sub-Facility - Global off-transect
+      species observations
+    physical_datasets:
+    - type: object
+      format: csv
+      store:
+        type: s3
+        bucket: imos-data
+        region: ap-southeast-2
+      patterns:
+      - ^IMOS/NRMN/ep_m0_off_transect_sighting_public_data.csv$
+  tags:
+  - NRMN
+- metadata_uuid: b273fafa-03d6-4fc2-9acf-39d8c06581e5
+  name: IMOS - National Reef Monitoring Network Sub-Facility - Global reef fish abundance
+    and biomass
+  logical_datasets:
+  - name: IMOS - National Reef Monitoring Network Sub-Facility - Global reef fish
+      abundance and biomass
+    physical_datasets:
+    - type: object
+      format: csv
+      store:
+        type: s3
+        bucket: imos-data
+        region: ap-southeast-2
+      patterns:
+      - ^IMOS/NRMN/ep_m1_public_data.csv$
+  tags:
+  - NRMN
+- metadata_uuid: e41efa35-03f0-4dea-be98-2a69e46b510b
+  name: IMOS - National Reef Monitoring Network Sub-Facility - Site information
+  logical_datasets:
+  - name: IMOS - National Reef Monitoring Network Sub-Facility - Site information
+    physical_datasets:
+    - type: object
+      format: csv
+      store:
+        type: s3
+        bucket: imos-data
+        region: ap-southeast-2
+      patterns:
+      - ^IMOS/NRMN/ep_site_list_public_data.csv$
+  tags:
+  - NRMN
+- metadata_uuid: 997c2e15-b345-438f-afac-49a4ac19be38
+  name: IMOS - National Reef Monitoring Network Sub-Facility - Survey metadata
+  logical_datasets:
+  - name: IMOS - National Reef Monitoring Network Sub-Facility - Survey metadata
+    physical_datasets:
+    - type: object
+      format: csv
+      store:
+        type: s3
+        bucket: imos-data
+        region: ap-southeast-2
+      patterns:
+      - ^IMOS/NRMN/ep_survey_list_public_data.csv$
+  tags:
+  - NRMN
