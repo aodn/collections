@@ -12,6 +12,23 @@ on:
 
 jobs:
 
+  validate_tag:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+
+      - name: Ensure tag does not already exist
+        run: |
+          TAG="${{ inputs.tag }}"
+          if gh api "/repos/${{ github.repository }}/git/ref/tags/${TAG}" >/dev/null 2>&1; then
+            echo "::error::Tag ${TAG} already exists. Choose a different tag."
+            exit 1
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+
   checks:
     uses: ./.github/workflows/checks.yml
 
@@ -36,12 +53,6 @@ jobs:
           file: "pyproject.toml"
           field: "project.name"
 
-      - name: Resolve tag
-        id: vars
-        run: |
-          TAG="${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref_name }}"
-          echo "TAG=$TAG" >> $GITHUB_ENV
-
       - uses: astral-sh/setup-uv@v5
         with:
           python-version: "3.12"
@@ -49,6 +60,17 @@ jobs:
 
       - name: Build python wheel/sdist
         run: uv build
+
+
+      - name: Generate Catalog Parquet Artifact
+        run: |
+          uv run --with polars python -c "
+          import polars
+          from aodn_collections import CATALOG_V1
+          df = CATALOG_V1.as_table()
+          df.to_parquet('dist/catalog_v1.parquet')
+          df.to_csv('dist/catalog_v1.parquet')
+          "
 
       - name: Create GitHub Release
         run: |
