@@ -1,0 +1,74 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag to release (e.g. v1.2.3)"
+        required: true
+
+jobs:
+  validate_tag:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      tag: ${{ github.event.inputs.tag }}
+    steps:
+      - name: Ensure tag does not already exist
+        run: |
+          TAG="${{ github.event.inputs.tag }}"
+          if gh api "/repos/${{ github.repository }}/git/ref/tags/${TAG}" >/dev/null 2>&1; then
+            echo "::error::Tag ${TAG} already exists. Choose a different tag."
+            exit 1
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+  checks:
+    uses: ./.github/workflows/checks.yml
+
+  release:
+    needs: [validate_tag, checks]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Read Project Name
+        id: pyproject_name
+        uses: sravinet/toml-select@v1.0.1
+        with:
+          file: "pyproject.toml"
+          field: "project.name"
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+          enable-cache: true
+
+      - name: Build python wheel/sdist
+        run: uv build
+
+      - name: Generate Catalog Parquet Artifact
+        run: |
+          uv run --with polars python -c "
+          import polars; from aodn_collections import CATALOG_V1
+          CATALOG_V1.as_table().write_parquet('dist/catalog_v1.parquet')
+          "
+
+      - name: Generate Catalogs YAML Artifact
+        run: cp -r src/aodn_collections/catalogs dist/
+
+      - name: Create GitHub Release
+        run: |
+          TAG="${{ needs.validate_tag.outputs.tag }}"
+          gh release create "$TAG" \
+            dist/* \
+            --generate-notes \
+            --title "Release $TAG"
+        env:
+          GH_TOKEN: ${{ github.token }}

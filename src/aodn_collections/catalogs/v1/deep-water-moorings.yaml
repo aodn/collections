@@ -1,0 +1,92 @@
+name: imos-data
+
+collections:
+- metadata_uuid: ac6968f1-a551-42b7-aad5-91f58a18963b
+  name: IMOS - Deep Water Moorings - CSIRO gridded time-series product
+  logical_datasets:
+  - name: IMOS - Deep Water Moorings - CSIRO gridded time-series product
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/DWM/DA/CSIRO_gridded_all_variables/.*\.nc$
+  tags:
+  - DWM
+
+- metadata_uuid: f7e49e83-4579-413c-b092-2187dca8395d
+  name: IMOS - Deep Water Moorings - Current velocity time-series
+  # TODO: Deprecate this collection, in favour of an all-DWM (or all-moorings) delayed-mode one?
+  logical_datasets:
+  - name: IMOS - Deep Water Moorings - Current velocity time-series
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/DWM/ASFS/SOFS/Sub-surface_currents/.*_FV01_.*\.nc$
+      - ^IMOS/DWM/DA/.*/Velocity/.*\.nc$
+      - ^IMOS/DWM/SOTS/.*/IMOS_DWM-SOTS_[A-Z]*V.*FV01_.*\.nc$
+  tags:
+  - DWM
+
+- metadata_uuid: b355a5a5-e6ec-45c7-8506-103cf160431a
+  name: IMOS - Deep Water Moorings - Southern Ocean Flux Station (SOFS) - Surface
+    fluxes (delayed mode)
+  logical_datasets:
+  - name: IMOS - Deep Water Moorings - Southern Ocean Flux Station (SOFS) - Surface
+      fluxes (delayed mode)
+    physical_datasets:
+    - type: object
+      patterns:
+      - TODO
+      # Do we have any DM flux data?? nothing under "IMOS/DWM/ASFS/SOFS/Surface_fluxes/"
+  tags:
+  - DWM
+
+- metadata_uuid: 80ffbf9d-9547-41aa-8fa1-cf028c58556a
+  name: IMOS - Deep Water Moorings - Southern Ocean Flux Station (SOFS) - Surface
+    fluxes (real-time)
+  logical_datasets:
+  - name: IMOS - Deep Water Moorings - Southern Ocean Flux Station (SOFS) - Surface
+      fluxes (real-time)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/DWM/ASFS/SOFS/Surface_fluxes/Real-time/.*\.nc$
+  tags:
+  - DWM
+
+- metadata_uuid: 9fdb1eee-bc28-43a9-88c5-972324784837
+  name: IMOS - Deep Water Moorings - Southern Ocean Flux Station (SOFS) - Surface
+    properties (real-time)
+  logical_datasets:
+  - name: IMOS - Deep Water Moorings - Southern Ocean Flux Station (SOFS) - Surface
+      properties (real-time)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/DWM/ASFS/SOFS/Surface_properties/Real-time/.*\.nc$
+  tags:
+  - DWM
+
+- metadata_uuid: 723a3e85-04ae-40e6-ac2a-237a93d84abe
+  name: IMOS - Deep Water Moorings - Southern Ocean Time Series (SOTS) - all delayed-mode
+    data
+  logical_datasets:
+  - name: IMOS - Deep Water Moorings - Southern Ocean Time Series (SOTS) - all delayed-mode
+      data
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/DWM/SOTS/[0-9]{4}/IMOS_.*\.nc$
+      # TODO: split this into logical collections for (FV00?), FV01, FV02?
+  tags:
+  - DWM
+
+- metadata_uuid: c117a4a5-32b8-488a-8b98-ac3b7a0abc2a
+  name: IMOS - Deep Water Moorings - Temperature and salinity time-series
+  logical_datasets:
+  - name: IMOS - Deep Water Moorings - Temperature and salinity time-series
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/DWM/.*\.nc$
+  tags:
+  - DWM

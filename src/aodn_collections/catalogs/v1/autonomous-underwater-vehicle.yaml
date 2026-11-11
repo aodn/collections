@@ -1,0 +1,12 @@
+name: imos-data
+collections:
+- metadata_uuid: af5d0ff9-bb9c-4b7c-a63c-854a630b6984
+  name: IMOS - Autonomous Underwater Vehicle (AUV) Facility
+  logical_datasets:
+  - name: IMOS - Autonomous Underwater Vehicle (AUV) Facility
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/AUV/.*\.nc$
+  tags:
+  - AUV

@@ -1,0 +1,11 @@
+name: imos-data
+collections:
+- metadata_uuid: 00000000-0000-0000-0000-000000000000
+  name: PLACEHOLDER
+  logical_datasets:
+  - name: PLACEHOLDER
+    physical_datasets:
+    - type: object
+      patterns:
+      - TODO
+  tags: []

@@ -1,0 +1,276 @@
+name: imos-data
+
+collections:
+- metadata_uuid: 4d3d4aca-472e-4616-88a5-df0f5ab401ba
+  name: IMOS - National Mooring Network -  Acidification Moorings (AM) Sub-Facility
+    - Automatically quality-controlled near real-time data
+  logical_datasets:
+  - name: IMOS - National Mooring Network -  Acidification Moorings (AM) Sub-Facility
+      - Automatically quality-controlled near real-time data
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ANMN/AM/.*/CO2/real-time/.*\.nc$
+  tags:
+  - ANMN
+
+- metadata_uuid: 89b495cc-7382-43c0-abef-d1e66738a924
+  name: IMOS - National Mooring Network -  Acidification Moorings (AM) Sub-Facility
+    - delayed mode data
+  logical_datasets:
+  - name: IMOS - National Mooring Network -  Acidification Moorings (AM) Sub-Facility
+      - delayed mode data
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ANMN/AM/.*/CO2/delayed/.*\.nc$
+  tags:
+  - ANMN
+
+- metadata_uuid: b442c3e8-3d30-48ad-b144-680afd848167
+  name: IMOS - Combined Biogeochemical parameters (reference stations)
+  logical_datasets:
+  - name: IMOS - Combined Biogeochemical parameters (reference stations)
+    physical_datasets:
+    - type: object
+      format: csv
+      patterns:
+      - TODO
+  tags:
+  - ANMN
+  - water-sampling-db
+
+- metadata_uuid: 7b901002-b1dc-46c3-89f2-b4951cedca48
+  name: IMOS - Australian National Mooring Network (ANMN) - CTD Profiles
+  logical_datasets:
+  - name: IMOS - Australian National Mooring Network (ANMN) - CTD Profiles
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ANMN/.*/(Biogeochem|CTD)_profiles/.*_FV01_.*\.nc$
+  tags:
+  - ANMN
+
+- metadata_uuid: 8e754b8b-c40f-4a21-ae82-573a67fc3556
+  name: IMOS - Larval Fish Sub-Facility - Database of Marine Larval Fish Assemblages
+    in Australian temperate and subtropical waters (1983 - ongoing)
+  logical_datasets:
+  - name: IMOS - Larval Fish Sub-Facility - Database of Marine Larval Fish Assemblages
+      in Australian temperate and subtropical waters (1983 - ongoing)
+    physical_datasets:
+    - type: object
+      format: csv
+      patterns:
+      - TODO
+  tags:
+  - ANMN
+  - water-sampling-db
+
+- metadata_uuid: d3feff71-ebe1-4b66-91c6-149beceef205
+  name: IMOS - National Mooring Network -  National Reference Stations - Combined
+    long-term hydrological data product (1944-2014)
+  logical_datasets:
+  - name: IMOS - National Mooring Network -  National Reference Stations - Combined
+      long-term hydrological data product (1944-2014)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ANMN/NRS/NRSMAI/aggregated_products/.*\.nc$
+  tags:
+  - ANMN
+
+- metadata_uuid: 006bb7dc-860b-4b89-bf4c-6bd930bd35b7
+  name: IMOS - National Mooring Network -  National Reference Stations - Darwin and
+    Yongala - Near real-time meteorology and oceanographical data
+  # TODO: should this include FV00 files, or only FV01?
+  logical_datasets:
+  - name: IMOS - National Mooring Network -  National Reference Stations - Darwin
+      and Yongala - Near real-time meteorology and oceanographical data
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ANMN/NRS/REAL_TIME/DARGBF/.*\.nc$
+      - ^IMOS/ANMN/NRS/REAL_TIME/NRSYON/.*\.nc$
+      - ^IMOS/ANMN/NRS/REAL_TIME/NRSDAR/.*\.nc$
+  tags:
+  - ANMN
+
+- metadata_uuid: f3910f5c-c568-4af0-b773-13c0e57ada6b
+  name: IMOS - National Mooring Network -  National Reference Stations - Maria and
+    North Stradbroke Islands - Near real-time meteorology and sea surface temperature
+  # TODO: remove/archive (Legacy collection)
+  logical_datasets:
+  - name: IMOS - National Mooring Network -  National Reference Stations - Maria and
+      North Stradbroke Islands - Near real-time meteorology and sea surface temperature
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ANMN/NRS/REAL_TIME/(NRSMAI|NRSNSI)/Meteorology/.*\.nc$
+  tags:
+  - ANMN
+
+- metadata_uuid: 13b3900f-2623-463c-98a7-ea60ac8e61ae
+  name: IMOS - National Mooring Network -  National Reference Stations - Maria and
+    North Stradbroke Islands - Near real-time water quality
+  # TODO: remove/archive (Legacy collection)
+  logical_datasets:
+  - name: IMOS - National Mooring Network -  National Reference Stations - Maria and
+      North Stradbroke Islands - Near real-time water quality
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ANMN/NRS/REAL_TIME/(NRSMAI|NRSNSI)/Biogeochem_timeseries/.*\.nc$
+  tags:
+  - ANMN
+
+- metadata_uuid: 72dbe843-2fb1-4b2e-8b7e-4661d857affb
+  name: IMOS - National Mooring Network -  National Reference Stations - Maria and
+    North Stradbroke Islands - Near real-time wave height
+  # TODO: remove/archive (Legacy collection)
+  logical_datasets:
+  - name: IMOS - National Mooring Network -  National Reference Stations - Maria and
+      North Stradbroke Islands - Near real-time wave height
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ANMN/NRS/REAL_TIME/(NRSMAI|NRSNSI)/Wave/.*\.nc$
+  tags:
+  - ANMN
+
+- metadata_uuid: a8f5c736-6eaa-47fb-a9eb-d778beb71701
+  name: IMOS - National Mooring Network Facility - Near real-time data
+  logical_datasets:
+  - name: IMOS - National Mooring Network Facility - Near real-time data
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ANMN/NRS/NRSMAI/real-time/.*\.nc$
+      - ^IMOS/ANMN/NRS/NRSROT/real-time/.*\.nc$
+      - ^IMOS/ANMN/NRS/NRSKAI/real-time/.*\.nc$
+  tags:
+  - ANMN
+
+- metadata_uuid: 279a50e3-21a5-4590-85a0-71f963efab82
+  name: IMOS - Moorings - Gridded time-series product
+  logical_datasets:
+  - name: IMOS - Moorings - Gridded time-series product
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ANMN/.*/gridded_timeseries/.*\.nc$
+      - ^IMOS/DWM/DA/.*/gridded_timeseries/.*\.nc$
+  tags:
+  - ANMN
+  - DWM
+
+- metadata_uuid: efd8201c-1eca-412e-9ad2-0534e96cea14
+  name: IMOS - Moorings - Hourly time-series product
+  logical_datasets:
+  - name: IMOS - Moorings - Hourly time-series product
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ANMN/.*/hourly_timeseries/.*\.nc$
+      - ^IMOS/DWM/DA/.*/hourly_timeseries/.*\.nc$
+  tags:
+  - ANMN
+  - DWM
+
+- metadata_uuid: aaebf991-b79d-4670-a1c5-a0de9bf649ce
+  name: IMOS - Australian National Mooring Network (ANMN) - Wave time-series
+  logical_datasets:
+  - name: IMOS - Australian National Mooring Network (ANMN) - Wave time-series
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ANMN/.*/Wave/.*_FV01_.*\.nc$
+      # Could restrict to "IMOS/ANMN/(NRS|QLD)/"
+  tags:
+  - ANMN
+
+- metadata_uuid: ae86e2f5-eaaf-459e-a405-e654d85adb9c
+  name: IMOS - Australian National Mooring Network (ANMN) Facility - Current velocity
+    time-series
+  # TODO: Deprecate this collection, in favour of an all-ANMN (or all-moorings) delayed-mode one?
+  logical_datasets:
+  - name: IMOS - Australian National Mooring Network (ANMN) Facility - Current velocity
+      time-series
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ANMN/.*/Velocity/.*_FV01_.*\.nc$
+  tags:
+  - ANMN
+
+- metadata_uuid: 7e13b5f3-4a70-4e31-9e95-335efa491c5c
+  name: IMOS - Australian National Mooring Network (ANMN) Facility - Temperature and
+    salinity time-series
+  # Badly defined collection - arbitrarily excludes burst-sampling instruments (and possibly more...)
+  # TODO: Deprecate in favour of an all-ANMN (or all-moorings) delayed-mode one?
+  logical_datasets:
+  - name: IMOS - Australian National Mooring Network (ANMN) Facility - Temperature
+      and salinity time-series
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ANMN/.*/Temperature/.*_FV01_.*\.nc$
+      - ^IMOS/ANMN/.*/CTD_timeseries/.*_FV01_.*(SBE|XR-420).*_END-.*\.nc$
+  tags:
+  - ANMN
+
+- metadata_uuid: 8964658c-6ee1-4015-9bae-2937dfcc6ab9
+  name: IMOS - Australian National Mooring Network (ANMN) Facility - WQM and CTD burst
+    averaged data products
+  # Badly defined collection - arbitrarily includes only burst-sampling instruments (and possibly more...)
+  # TODO: Deprecate in favour of an all-ANMN (or all-moorings) delayed-mode one?
+  logical_datasets:
+  - name: IMOS - Australian National Mooring Network (ANMN) Facility - WQM and CTD
+      burst averaged data products
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ANMN/.*/burst-averaged/.*\.nc$
+  tags:
+  - ANMN
+
+- metadata_uuid: f098f0d0-88ac-4f4b-addb-24b3e5e8d0b9
+  name: IMOS - Phytoplankton Abundance and Biovolume (reference stations)
+  logical_datasets:
+  - name: IMOS - Phytoplankton Abundance and Biovolume (reference stations)
+    physical_datasets:
+    - type: object
+      format: csv
+      patterns:
+      - TODO
+  tags:
+  - ANMN
+  - water-sampling-db
+
+- metadata_uuid: bc14672f-c007-408e-972b-684d8415dae8
+  name: IMOS - Zooplankton Abundance and Biomass (reference stations)
+  logical_datasets:
+  - name: IMOS - Zooplankton Abundance and Biomass (reference stations)
+    physical_datasets:
+    - type: object
+      format: csv
+      patterns:
+      - TODO
+  tags:
+  - ANMN
+  - water-sampling-db
+
+- metadata_uuid: 00000000-0000-0000-0000-000000000000
+  name: UNKNOWN
+  # I don't think there's a metadata record for this one, as we decided not to make this product available on the Portal.
+  # TODO: consider making it a collection anyway, as it's a clearly defined product?
+  logical_datasets:
+  - id: default
+    name: UNKNOWN
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/ANMN/.*/aggregated_timeseries/.*\.nc$
+      - ^IMOS/DWM/DA/.*/aggregated_timeseries/.*\.nc$
+  tags:
+  - ANMN
+  - DWM

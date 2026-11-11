@@ -1,0 +1,29 @@
+[project]
+name = "aodn-collections"
+dynamic = ["version"]
+description = "IMOS Centric Collection Metadata"
+readme = "README.md"
+authors = []
+requires-python = ">=3.12"
+dependencies = [
+    "polars>=2.1.0",
+    "pydantic>=2.14.3",
+    "pyyaml>=6.0.3",
+]
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.ruff.lint]
+extend-select = ["I"]
+
+[dependency-groups]
+dev = [
+    "owslib>=0.36.0",
+    "pre-commit>=4.7.0",
+    "pytest>=9.2.0",
+]

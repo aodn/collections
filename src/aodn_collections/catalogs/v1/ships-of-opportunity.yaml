@@ -1,0 +1,176 @@
+name: imos-data
+collections:
+- metadata_uuid: 07818819-2e5c-4a12-9395-0082b57b2fe8
+  name: IMOS - Ships of Opportunity - Air Sea Flux (ASF) sub-facility - Meteorological
+    and Flux Products
+  logical_datasets:
+  - name: IMOS - Ships of Opportunity - Air Sea Flux (ASF) sub-facility - Meteorological
+      and Flux Products
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SOOP/SOOP-ASF/.*/flux_product/.*\.nc$
+  tags:
+  - SOOP
+- metadata_uuid: 9436802f-ed93-4660-be50-e77c3c07bd09
+  name: IMOS - Ships of Opportunity - Air-Sea Flux (ASF) Sub-Facility - Meteorological
+    and SST Observations
+  logical_datasets:
+  - name: IMOS - Ships of Opportunity - Air-Sea Flux (ASF) Sub-Facility - Meteorological
+      and SST Observations
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SOOP/SOOP-ASF/.*/meteorological_sst_observations/.*\.nc$
+  tags:
+  - SOOP
+- metadata_uuid: 8edf509b-1481-48fd-b9c5-b95b42247f82
+  name: IMOS - Ships of Opportunity - Bioacoustics Sub-Facility
+  logical_datasets:
+  - name: IMOS - Ships of Opportunity - Bioacoustics Sub-Facility
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SOOP/SOOP-BA/.*\.nc$
+  tags:
+  - SOOP
+- metadata_uuid: 63db5801-cc19-40ef-83b3-85ccba884cf7
+  name: IMOS - Ships of Opportunity - Biogeochemical Sensors - delayed mode data
+  logical_datasets:
+  - name: IMOS - Ships of Opportunity - Biogeochemical Sensors - delayed mode data
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SOOP/SOOP-CO2/[a-zA-Z_]+/20\d{2}/.*\.nc$
+  tags:
+  - SOOP
+- metadata_uuid: 9e5c3031-a026-48b3-a153-a70c2e2b78b9
+  name: IMOS - Ships of Opportunity - Biogeochemical Sensors - Near real-time raw
+    data
+  logical_datasets:
+  - name: IMOS - Ships of Opportunity - Biogeochemical Sensors - Near real-time raw
+      data
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SOOP/SOOP-CO2/[a-zA-Z_]+/REALTIME/.*\.nc$
+  tags:
+  - SOOP
+- metadata_uuid: 8e594cd1-363a-4b58-b741-9fa3624adb77
+  name: IMOS - Phytoplankton Abundance and Biovolume (CPR)
+  logical_datasets:
+  - name: IMOS - Phytoplankton Abundance and Biovolume (CPR)
+    physical_datasets:
+    - type: object
+      patterns:
+      - TODO
+  tags:
+  - SOOP
+- metadata_uuid: bf287dfe-9ce4-4969-9c59-51c39ea4d011
+  name: IMOS - Zooplankton Abundance and Biomass Index (CPR)
+  logical_datasets:
+  - name: IMOS - Zooplankton Abundance and Biomass Index (CPR)
+    physical_datasets:
+    - type: object
+      patterns:
+      - TODO
+  tags:
+  - SOOP
+- metadata_uuid: 911f6b96-fa33-4621-9d8c-4d1cc14d94d0
+  name: IMOS - Ships of Opportunity - Expendable Bathythermographs (XBT) Research
+    Group - XBT delayed mode data
+  logical_datasets:
+  - name: IMOS - Ships of Opportunity - Expendable Bathythermographs (XBT) Research
+      Group - XBT delayed mode data
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SOOP/SOOP-XBT/DELAYED/.*\.nc$
+  tags:
+  - SOOP
+- metadata_uuid: 35234913-aa3c-48ec-b9a4-77f822f66ef8
+  name: IMOS - Ships of Opportunity - Expendable Bathythermographs (XBT) Research
+    Group - XBT real-time data
+  logical_datasets:
+  - name: IMOS - Ships of Opportunity - Expendable Bathythermographs (XBT) Research
+      Group - XBT real-time data
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SOOP/SOOP-XBT/REALTIME/.*\.nc$
+  tags:
+  - SOOP
+- metadata_uuid: bdb84466-dc53-49ad-a60f-83d9fa0baed5
+  name: IMOS - Ships of Opportunity - Fisheries Vessels as Ships of Opportunity Sub-Facility
+    - Real-time data
+  logical_datasets:
+  - name: IMOS - Ships of Opportunity - Fisheries Vessels as Ships of Opportunity
+      Sub-Facility - Real-time data
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SOOP/SOOP-FishSOOP/REALTIME/.*\.nc$
+  tags:
+  - SOOP
+- metadata_uuid: 67f0b6ea-518f-4af5-9d21-dd3c08c7cb5c
+  name: IMOS - Ships of Opportunity - Sea Surface Temperature Sensors for Australian
+    Vessels Sub-Facility - 1-minute average data products
+  logical_datasets:
+  - name: IMOS - Ships of Opportunity - Sea Surface Temperature Sensors for Australian
+      Vessels Sub-Facility - 1-minute average data products
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SOOP/SOOP-SST/.*_FV01_1-min-avg_C.*\.nc$
+  tags:
+  - SOOP
+- metadata_uuid: ca15915b-38c5-4e95-8d25-9cc42c4dd485
+  name: IMOS - Ships of Opportunity - Sea Surface Temperature Sensors for Australian
+    Vessels Sub-Facility - Near real-time data
+  logical_datasets:
+  - name: IMOS - Ships of Opportunity - Sea Surface Temperature Sensors for Australian
+      Vessels Sub-Facility - Near real-time data
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SOOP/SOOP-SST/.*/IMOS_SOOP-SST-MT_[a-zA-Z0-9_-]_.*_FV01.*\.nc$
+  tags:
+  - SOOP
+- metadata_uuid: d24d26cc-cd8c-4c5b-94e5-809051043d7e
+  name: IMOS - Ships of Opportunity - Temperate Merchant Vessels Sub-Facility - Data
+    collected on the Spirit of Tasmania I during transect between Melbourne and Devonport
+    (Near real-time)
+  logical_datasets:
+  - name: IMOS - Ships of Opportunity - Temperate Merchant Vessels Sub-Facility -
+      Data collected on the Spirit of Tasmania I during transect between Melbourne
+      and Devonport (Near real-time)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SOOP/SOOP-TMV/[a-zA-Z0-9_-]+/realtime/.*\.nc$
+  tags:
+  - SOOP
+- metadata_uuid: 02640f4e-08d0-4f3a-956b-7f9b58966ccc
+  name: IMOS - Ships of Opportunity -Temperate Merchant Vessels Sub-Facility - Data
+    collected on the Spirit of Tasmania I during transect between Melbourne and Devonport
+    (Delayed mode)
+  logical_datasets:
+  - name: IMOS - Ships of Opportunity -Temperate Merchant Vessels Sub-Facility - Data
+      collected on the Spirit of Tasmania I during transect between Melbourne and
+      Devonport (Delayed mode)
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SOOP/SOOP-TMV/[a-zA-Z0-9_-]+/transect/.*\.nc$
+  tags:
+  - SOOP
+- metadata_uuid: 8af21108-c535-43bf-8dab-c1f45a26088c
+  name: IMOS - Ships of Opportunity - Sensors on Tropical Research Vessels Sub-Facility
+  logical_datasets:
+  - name: IMOS - Ships of Opportunity - Sensors on Tropical Research Vessels Sub-Facility
+    physical_datasets:
+    - type: object
+      patterns:
+      - ^IMOS/SOOP/SOOP-TRV/.*\.nc$
+  tags:
+  - SOOP
