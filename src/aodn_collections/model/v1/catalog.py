@@ -100,8 +100,8 @@ class Catalog(pydantic.BaseModel):
 
 
 if __name__ == "__main__":
-    import pathlib
+    import rich
 
-    catalogs_dir = pathlib.Path("catalogs/v1")
-    catalog = Catalog.from_dir(catalogs_dir=catalogs_dir)
-    print(catalog.as_table())
+    import aodn_collections
+
+    rich.print(aodn_collections.CATALOG_V1.as_table())

@@ -22,6 +22,9 @@ __NORMALISED_COLLECTION_SCHEMA__ = polars.Schema(
         "logical_datasets.physical_datasets.store.region": polars.String,
         "logical_datasets.physical_datasets.patterns": polars.List(polars.String),
         "logical_datasets.physical_datasets.key": polars.String,
+        "logical_datasets.physical_datasets.time_coverage_field_name": polars.String,
+        "logical_datasets.physical_datasets.geospatial_lat_field_name": polars.String,
+        "logical_datasets.physical_datasets.geospatial_lon_field_name": polars.String,
         "tags": polars.List(polars.String),
     }
 )
