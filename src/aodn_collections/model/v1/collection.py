@@ -74,8 +74,9 @@ class Collection(pydantic.BaseModel):
 
         df = (
             polars.json_normalize(
-                (collection.model_dump() for collection in collections),
+                data=(collection.model_dump() for collection in collections),
                 strict=False,
+                infer_schema_length=None,
             )
             .explode("logical_datasets")
             .unnest(

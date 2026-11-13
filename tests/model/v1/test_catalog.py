@@ -44,7 +44,7 @@ def test_from_dir_requires_directory(tmp_path: pathlib.Path):
     path = tmp_path / "catalog.yaml"
     path.write_text("name: invalid\ncollections: []\n")
 
-    with pytest.raises(AssertionError, match="catalogs_dir must be a directory"):
+    with pytest.raises(NotADirectoryError, match="catalogs_dir must be a directory"):
         Catalog.from_dir(path, name="merged")
 
 
@@ -52,7 +52,7 @@ def test_from_dir_rejects_non_yaml_files(tmp_path: pathlib.Path):
     (tmp_path / "notes.txt").write_text("not yaml")
 
     with pytest.raises(
-        AssertionError, match="catalogs_dir must only contain yaml files"
+        FileExistsError, match="catalogs_dir must only contain yaml files"
     ):
         Catalog.from_dir(tmp_path, name="merged")
 
