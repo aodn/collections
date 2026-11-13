@@ -80,7 +80,7 @@ class Catalog(pydantic.BaseModel):
 
         # Are all yaml files
         if not all(path.suffix in __YAML_SUFFIXES__ for path in catalogs_dir.glob("*")):
-            raise ValueError("catalogs_dir must only contain yaml files")
+            raise FileExistsError("catalogs_dir must only contain yaml files")
 
     @classmethod
     def from_dir(
