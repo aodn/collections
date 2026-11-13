@@ -71,6 +71,17 @@ class Catalog(pydantic.BaseModel):
     def as_yaml(self) -> str:
         return yaml.safe_dump(self.model_dump(mode="json"), sort_keys=False)
 
+    @staticmethod
+    def _validate_catalogs_dir(catalogs_dir: pathlib.Path) -> None:
+
+        # Is Dir
+        if not catalogs_dir.is_dir():
+            raise NotADirectoryError("catalogs_dir must be a directory")
+
+        # Are all yaml files
+        if not all(path.suffix in __YAML_SUFFIXES__ for path in catalogs_dir.glob("*")):
+            raise ValueError("catalogs_dir must only contain yaml files")
+
     @classmethod
     def from_dir(
         cls,
@@ -78,15 +89,11 @@ class Catalog(pydantic.BaseModel):
         name: str = "meta-catalog",
     ) -> typing.Self:
 
-        # Validation
-        assert catalogs_dir.is_dir(), "catalogs_dir must be a directory"
-        assert all(
-            path.suffix in __YAML_SUFFIXES__ for path in catalogs_dir.glob("*")
-        ), "catalogs_dir must only contain yaml files"
+        cls._validate_catalogs_dir(catalogs_dir)
 
         # Collect all the collections into a single meta catalog
         collections = []
-        for catalog_path in catalogs_dir.glob("*"):
+        for catalog_path in sorted(catalogs_dir.glob("*")):
             catalog = Catalog.from_yaml(catalog_path)
             collections.extend(catalog.collections)
 
