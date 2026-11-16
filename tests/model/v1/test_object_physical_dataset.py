@@ -6,6 +6,7 @@ import pytest
 from aodn_collections.model.v1.physical_dataset.object_physical_dataset import (
     MissingEndAnchorError,
     MissingStartAnchorError,
+    MustHaveOneCaptureGroupError,
     ObjectPhysicalDataset,
     RegexCompilationError,
 )
@@ -33,16 +34,27 @@ def test__compiles():
 
 def test__has_end_anchor():
     with pytest.raises(MissingEndAnchorError):
-        ObjectPhysicalDataset._has_end_anchor("^IMOS/test.nc")
+        ObjectPhysicalDataset._has_end_anchor(r"^IMOS/test.nc")
 
-    assert ObjectPhysicalDataset._has_end_anchor("^IMOS/test.nc$")
+    assert ObjectPhysicalDataset._has_end_anchor(r"^IMOS/test.nc$")
 
 
 def test__has_start_anchor():
     with pytest.raises(MissingStartAnchorError):
-        ObjectPhysicalDataset._has_start_anchor("IMOS/test.nc$")
+        ObjectPhysicalDataset._has_start_anchor(r"IMOS/test.nc$")
 
-    assert ObjectPhysicalDataset._has_start_anchor("^IMOS/test.nc$")
+    assert ObjectPhysicalDataset._has_start_anchor(r"^IMOS/test.nc$")
+
+
+def test__has_one_capture_group():
+    with pytest.raises(MustHaveOneCaptureGroupError):
+        ObjectPhysicalDataset._has_one_capture_group(
+            r"^IMOS/SRS/SST/ghrsst/(.*/)?((?:19|20)\d{12})"
+        )
+
+    assert ObjectPhysicalDataset._has_one_capture_group(
+        r"^IMOS/SRS/SST/ghrsst/(?:.*/)?((?:19|20)\d{12})"
+    )
 
 
 def test__validate_patterns_valid_patterns():

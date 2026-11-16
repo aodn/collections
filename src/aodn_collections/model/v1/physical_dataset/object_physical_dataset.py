@@ -16,6 +16,7 @@ __PATTERN_VALIDATION_METHODS__ = typing.Literal[
     "_compiles",
     "_has_start_anchor",
     "_has_end_anchor",
+    "_has_one_capture_group",
 ]
 
 
@@ -26,6 +27,9 @@ class MissingStartAnchorError(ValueError): ...
 
 
 class MissingEndAnchorError(ValueError): ...
+
+
+class MustHaveOneCaptureGroupError(ValueError): ...
 
 
 class ObjectPhysicalDataset(BasePhysicalDataset):
@@ -78,6 +82,17 @@ class ObjectPhysicalDataset(BasePhysicalDataset):
 
         return True
 
+    @staticmethod
+    def _has_one_capture_group(pattern: str):
+        """Validates that the regex pattern has exactly one capturing group."""
+        compiled = re.compile(pattern)
+        if compiled.groups != 1:
+            raise MustHaveOneCaptureGroupError(
+                f"patterns must have exactly 1 capturing group: got {compiled.groups} in `{pattern}`"
+            )
+
+        return True
+
     @classmethod
     def _validate_patterns(
         cls,
@@ -119,11 +134,15 @@ class ObjectPhysicalDataset(BasePhysicalDataset):
     def validate_start_date_patterns(
         cls, patterns: typing.Sequence[str] | None
     ) -> typing.Sequence[str] | None:
-        return cls._validate_patterns(patterns)
+        return cls._validate_patterns(
+            patterns=patterns, checks=("_compiles", "_has_one_capture_group")
+        )
 
     @pydantic.field_validator("end_date_patterns")
     @classmethod
     def validate_end_date_patterns(
         cls, patterns: typing.Sequence[str] | None
     ) -> typing.Sequence[str]:
-        return cls._validate_patterns(patterns)
+        return cls._validate_patterns(
+            patterns=patterns, checks=("_compiles", "_has_one_capture_group")
+        )
