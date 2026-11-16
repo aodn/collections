@@ -50,8 +50,9 @@ class ObjectPhysicalDataset(BasePhysicalDataset):
     start_date_patterns: typing.Sequence[str] | None = pydantic.Field(default=None)
     end_date_patterns: typing.Sequence[str] | None = pydantic.Field(default=None)
 
-    def unified_pattern(self, attribute: str = "patterns") -> str:
-        return "|".join(getattr(self, attribute))
+    @property
+    def unified_pattern(self) -> str:
+        return "|".join(self.patterns)
 
     @staticmethod
     def _compiles(pattern: str) -> typing.Literal[True]:
