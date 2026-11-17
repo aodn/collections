@@ -3,6 +3,16 @@
     # Disregard all text before the last `/`  => `^(?:.*/)?`
     # YYYYmmddHHMMSS begining `19` or `20`    => `((?:19|20)\d{12})`
     '^IMOS/SRS/SST/ghrsst/(?:.*/)?((?:19|20)\d{12})'
+  __SRS_OC_start_date_pattern__: &__SRS_OC_start_date_pattern__
+    # Beginning `IMOS/SRS/OC/gridded/`
+    # `aqua|noaa20|snpp|seawifs`
+    # `P1D|P1H`
+    # `<year>`
+    # `<month>`
+    # `A|N|V|S`
+    # `P1D|P1H`
+    # `<YYYYmmddTHHMMSSZ>`
+    '^IMOS/SRS/OC/gridded/(?:aqua|noaa20|snpp|seawifs)/(?:P1D|P1H)/(?:19|20)\d{2}/\d{2}/(?:A|N|V|S)\.(?:P1D|P1H)\.(\d{8}T\d{6}Z)'
 
 name: imos-data
 collections:
@@ -49,6 +59,7 @@ collections:
       (Carder model)
     physical_datasets:
     - type: object
+      start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
       - ^IMOS/SRS/OC/gridded/aqua/P1D/.*chl_carder\.nc$
   tags:
@@ -62,6 +73,7 @@ collections:
       (GSM model)
     physical_datasets:
     - type: object
+      start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
       - ^IMOS/SRS/OC/gridded/aqua/P1D/.*aust\.chl_gsm\.nc$
   tags:
@@ -75,6 +87,7 @@ collections:
       OC3 model)
     physical_datasets:
     - type: object
+      start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
       - ^IMOS/SRS/OC/gridded/aqua/P1D/.*chl_oc3\.nc$
   tags:
@@ -88,6 +101,7 @@ collections:
       (OCI model)
     physical_datasets:
     - type: object
+      start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
       - ^IMOS/SRS/OC/gridded/aqua/P1D/.*chl_oci\.nc$
   tags:
@@ -100,6 +114,7 @@ collections:
       (k490)
     physical_datasets:
     - type: object
+      start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
       - ^IMOS/SRS/OC/gridded/aqua/P1D/.*K_490\.nc$
   tags:
@@ -113,6 +128,7 @@ collections:
       (OC3 model and Brewin et al 2012 algorithm)
     physical_datasets:
     - type: object
+      start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
       - ^IMOS/SRS/OC/gridded/aqua/P1D/.*aust\.nanop_brewin2012in\.nc$
   tags:
@@ -126,6 +142,7 @@ collections:
       (GSM model and Eppley-VGPM algorithm)
     physical_datasets:
     - type: object
+      start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
       - ^IMOS/SRS/OC/gridded/aqua/P1D/.*aust\.npp_vgpm_eppley_gsm\.nc$
   tags:
@@ -139,6 +156,7 @@ collections:
       (OC3 model and Eppley-VGPM algorithm)
     physical_datasets:
     - type: object
+      start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
       - ^IMOS/SRS/OC/gridded/aqua/P1D/.*aust\.npp_vgpm_eppley_oc3\.nc$
   tags:
@@ -150,6 +168,7 @@ collections:
   - name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Ocean Colour - SST
     physical_datasets:
     - type: object
+      start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
       - ^IMOS/SRS/OC/gridded/aqua/P1D/.*\.aust\.sst\.nc$
   tags:
@@ -164,6 +183,7 @@ collections:
       et al 2009 algorithm)
     physical_datasets:
     - type: object
+      start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
       - ^IMOS/SRS/OC/gridded/aqua/P1D/.*\.aust\.owtd_csiro\.nc$
   tags:
@@ -177,6 +197,7 @@ collections:
       (OC3 model and Brewin et al 2012 algorithm)
     physical_datasets:
     - type: object
+      start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
       - ^IMOS/SRS/OC/gridded/aquaP1D/.*\.aust\.picop_brewin2012in\.nc$
   tags:
@@ -190,6 +211,7 @@ collections:
       (GSM model)
     physical_datasets:
     - type: object
+      start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
       - ^IMOS/SRS/OC/gridded/noaa20/P1D/.*chl_gsm\.nc$
   tags:
@@ -204,6 +226,7 @@ collections:
       (OC3 model)
     physical_datasets:
     - type: object
+      start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
       - ^IMOS/SRS/OC/gridded/noaa20/P1D/.*chl_oc3\.nc$
   tags:
@@ -218,6 +241,7 @@ collections:
       (OCI model)
     physical_datasets:
     - type: object
+      start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
       - ^IMOS/SRS/OC/gridded/noaa20/P1D/.*chl_oci\.nc$
   tags:
@@ -232,6 +256,7 @@ collections:
       coefficient (k490)
     physical_datasets:
     - type: object
+      start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
       - ^IMOS/SRS/OC/gridded/noaa20/P1D/.*K_490\.nc$
   tags:
@@ -244,6 +269,7 @@ collections:
   - name: IMOS - Satellite Remote Sensing - NOAA20 - 01 day - Ocean Colour - SST
     physical_datasets:
     - type: object
+      start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
       - ^IMOS/SRS/OC/gridded/noaa20/P1D/.*\.nc$
   tags:
@@ -257,6 +283,7 @@ collections:
       et al 2009 algorithm)
     physical_datasets:
     - type: object
+      start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
       - ^IMOS/SRS/OC/gridded/noaa20/P1D/.*aust\.owtd_csiro\.nc$
   tags:
@@ -905,6 +932,7 @@ collections:
       (GSM model)
     physical_datasets:
     - type: object
+      start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
       - ^IMOS/SRS/OC/gridded/snpp/P1D/.*chl_gsm\.nc$
   tags:
@@ -919,6 +947,7 @@ collections:
       (OC3 model)
     physical_datasets:
     - type: object
+      start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
       - ^IMOS/SRS/OC/gridded/snpp/P1D/.*chl_oc3\.nc$
   tags:
@@ -933,6 +962,7 @@ collections:
       (OCI model)
     physical_datasets:
     - type: object
+      start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
       - ^IMOS/SRS/OC/gridded/snpp/P1D/.*chl_oci\.nc$
   tags:
@@ -947,6 +977,7 @@ collections:
       (k490)
     physical_datasets:
     - type: object
+      start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
       - ^IMOS/SRS/OC/gridded/snpp/P1D/.*K_490\.nc$
   tags:
@@ -959,6 +990,7 @@ collections:
   - name: IMOS - Satellite Remote Sensing - SNPP - 01 day - Ocean Colour - SST
     physical_datasets:
     - type: object
+      start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
       - ^IMOS/SRS/OC/gridded/snpp/P1D/.*\.aust\.sst\.nc$
   tags:
@@ -973,6 +1005,7 @@ collections:
       et al 2009 algorithm)
     physical_datasets:
     - type: object
+      start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
       - ^IMOS/SRS/OC/gridded/snpp/P1D/.*aust\.owtd_csiro\.nc$
   tags:
