@@ -1,8 +1,8 @@
 .defaults:
-  __SRS_SST_start_date_patterns__: &__SRS_SST_start_date_patterns__
+  __SRS_SST_start_date_pattern__: &__SRS_SST_start_date_pattern__
     # Disregard all text before the last `/`  => `^(?:.*/)?`
     # YYYYmmddHHMMSS begining `19` or `20`    => `((?:19|20)\d{12})`
-    - '^IMOS/SRS/SST/ghrsst/(?:.*/)?((?:19|20)\d{12})'
+    '^IMOS/SRS/SST/ghrsst/(?:.*/)?((?:19|20)\d{12})'
 
 name: imos-data
 collections:
@@ -397,7 +397,7 @@ collections:
   - name: IMOS - Satellite Remote Sensing - SST - L3C - Himawari-8 - 4 hour - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3C-4h/h08/.*\.nc$
   tags:
@@ -412,7 +412,7 @@ collections:
       time - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3C-1d/ngt/h08/.*\.nc$
   tags:
@@ -425,7 +425,7 @@ collections:
   - name: IMOS - Satellite Remote Sensing - SST - L3C - Himawari-8 - 1 hour - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3C-1h/h08/.*1h\.nc$
   tags:
@@ -440,7 +440,7 @@ collections:
       - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3C-1d/day/n19/.*\.nc$
   tags:
@@ -455,7 +455,7 @@ collections:
       - Southern Ocean
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3C-1dS/day/n19/.*\.nc$
   tags:
@@ -470,7 +470,7 @@ collections:
       - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3C-1d/ngt/n19/.*\.nc$
   tags:
@@ -485,7 +485,7 @@ collections:
       - Southern Ocean
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3C-1dS/ngt/n19/.*\.nc$
   tags:
@@ -499,7 +499,7 @@ collections:
       Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3C-1d/day/snpp/.*\.nc$
   tags:
@@ -514,7 +514,7 @@ collections:
       - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3C-1d/ngt/snpp/.*\.nc$
   tags:
@@ -529,7 +529,7 @@ collections:
       day - night time - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3SGM-1d/ngt/.*\.nc$
   tags:
@@ -543,7 +543,7 @@ collections:
       and night time - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3SM-1d/dn/.*\.nc$
   tags:
@@ -557,7 +557,7 @@ collections:
       and night time - Southern Ocean
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3S-1dS/dn/.*\.nc$
   tags:
@@ -571,7 +571,7 @@ collections:
       time - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3SM-1d/day/.*\.nc$
   tags:
@@ -585,7 +585,7 @@ collections:
       time - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3SM-1d/ngt/.*\.nc$
   tags:
@@ -599,7 +599,7 @@ collections:
       and night time - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3SM-1m/dn/.*\.nc$
   tags:
@@ -613,7 +613,7 @@ collections:
       time - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3SM-1m/day/.*\.nc$
   tags:
@@ -627,7 +627,7 @@ collections:
       time - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3SM-1m/ngt/.*\.nc$
   tags:
@@ -641,7 +641,7 @@ collections:
       and night time - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3SM-3d/dn/.*\.nc$
   tags:
@@ -655,7 +655,7 @@ collections:
       time - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3SM-3d/day/.*\.nc$
   tags:
@@ -669,7 +669,7 @@ collections:
       time - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3SM-3d/ngt/.*\.nc$
   tags:
@@ -683,7 +683,7 @@ collections:
       and night time - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3SM-6d/dn/.*\.nc$
   tags:
@@ -697,7 +697,7 @@ collections:
       time - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3SM-6d/day/.*\.nc$
   tags:
@@ -711,7 +711,7 @@ collections:
       time - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3SM-6d/ngt/.*\.nc$
   tags:
@@ -725,7 +725,7 @@ collections:
       and night time - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3S-1d/dn/.*\.nc$
   tags:
@@ -739,7 +739,7 @@ collections:
       time - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3S-1d/day/.*\.nc$
   tags:
@@ -753,7 +753,7 @@ collections:
       time - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3S-1d/ngt/.*\.nc$
   tags:
@@ -767,7 +767,7 @@ collections:
       day and night time - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3S-1m/dn/.*\.nc$
   tags:
@@ -781,7 +781,7 @@ collections:
       day and night time - Southern Ocean
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3S-1mS/dn/.*\.nc$
   tags:
@@ -795,7 +795,7 @@ collections:
       day time - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3S-1m/day/.*\.nc$
   tags:
@@ -809,7 +809,7 @@ collections:
       night time - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3S-1m/ngt/.*\.nc$
   tags:
@@ -823,7 +823,7 @@ collections:
       and night time - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3S-6d/dn/.*\.nc$
   tags:
@@ -837,7 +837,7 @@ collections:
       time - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3S-6d/day/.*\.nc$
   tags:
@@ -851,7 +851,7 @@ collections:
       time - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3S-6d/ngt/.*\.nc$
   tags:
@@ -865,7 +865,7 @@ collections:
       and night time - Southern Ocean
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L3SM-1mS/dn/.*\.nc$
   tags:
@@ -877,7 +877,7 @@ collections:
   - name: IMOS - Satellite Remote Sensing - SST - L4 - GAMSSA - World
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L4/GAMSSA/.*\.nc$
   tags:
@@ -890,7 +890,7 @@ collections:
   - name: IMOS - Satellite Remote Sensing - SST - L4 - RAMSSA - Australia
     physical_datasets:
     - type: object
-      start_date_patterns: *__SRS_SST_start_date_patterns__
+      start_date_patterns: *__SRS_SST_start_date_pattern__
       patterns:
       - ^IMOS/SRS/SST/ghrsst/L4/RAMSSA/.*\.nc$
   tags:

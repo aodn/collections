@@ -47,8 +47,8 @@ class ObjectPhysicalDataset(BasePhysicalDataset):
     patterns: typing.Sequence[str] = pydantic.Field(
         description="Regex patterns used to match dataset objects."
     )
-    start_date_patterns: typing.Sequence[str] | None = pydantic.Field(default=None)
-    end_date_patterns: typing.Sequence[str] | None = pydantic.Field(default=None)
+    start_date_pattern: str | None = pydantic.Field(default=None)
+    end_date_pattern: str | None = pydantic.Field(default=None)
 
     @property
     def unified_pattern(self) -> str:
@@ -95,6 +95,27 @@ class ObjectPhysicalDataset(BasePhysicalDataset):
         return True
 
     @classmethod
+    def _validate_pattern(
+        cls,
+        pattern: str | None,
+        checks: typing.Sequence[__PATTERN_VALIDATION_METHODS__] = ("_compiles",),
+        allow_none: bool = True,
+    ) -> str | None:
+
+        # Return None when allowed if None
+        if pattern is None:
+            if allow_none:
+                return None
+            raise ValueError(
+                "_validate_patterns called with patterns == `None` when not allowed!"
+            )
+
+        for check in checks:
+            getattr(cls, check)(pattern)
+
+        return pattern
+
+    @classmethod
     def _validate_patterns(
         cls,
         patterns: typing.Sequence[str] | None,
@@ -116,8 +137,11 @@ class ObjectPhysicalDataset(BasePhysicalDataset):
             if pattern == "TODO":
                 continue
 
-            for check in checks:
-                getattr(cls, check)(pattern)
+            _ = cls._validate_pattern(
+                pattern=pattern,
+                checks=checks,
+                allow_none=False,
+            )
 
         return patterns
 
@@ -130,20 +154,18 @@ class ObjectPhysicalDataset(BasePhysicalDataset):
             allow_none=False,
         )
 
-    @pydantic.field_validator("start_date_patterns")
+    @pydantic.field_validator("start_date_pattern")
     @classmethod
     def validate_start_date_patterns(
-        cls, patterns: typing.Sequence[str] | None
+        cls, pattern: str | None
     ) -> typing.Sequence[str] | None:
-        return cls._validate_patterns(
-            patterns=patterns, checks=("_compiles", "_has_one_capture_group")
+        return cls._validate_pattern(
+            pattern=pattern, checks=("_compiles", "_has_one_capture_group")
         )
 
-    @pydantic.field_validator("end_date_patterns")
+    @pydantic.field_validator("end_date_pattern")
     @classmethod
-    def validate_end_date_patterns(
-        cls, patterns: typing.Sequence[str] | None
-    ) -> typing.Sequence[str]:
-        return cls._validate_patterns(
-            patterns=patterns, checks=("_compiles", "_has_one_capture_group")
+    def validate_end_date_patterns(cls, pattern: str | None) -> typing.Sequence[str]:
+        return cls._validate_pattern(
+            pattern=pattern, checks=("_compiles", "_has_one_capture_group")
         )

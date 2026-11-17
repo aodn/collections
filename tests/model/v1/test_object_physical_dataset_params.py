@@ -49,9 +49,9 @@ def test_patterns_reject_invalid_values_during_model_validation(patterns):
         )
 
 
-@pytest.mark.parametrize("field", ["start_date_patterns", "end_date_patterns"])
+@pytest.mark.parametrize("field", ["start_date_pattern", "end_date_pattern"])
 @pytest.mark.parametrize(
-    "patterns",
+    "pattern",
     [
         # None allowed
         None,
@@ -63,18 +63,17 @@ def test_patterns_reject_invalid_values_during_model_validation(patterns):
         r"^IMOS/(?:.*/)?(\d{14})$",
     ],
 )
-def test_date_patterns_accept_valid_values_during_model_validation(field, patterns):
-    normalized_patterns = _as_pattern_list(patterns)
+def test_date_patterns_accept_valid_values_during_model_validation(field, pattern):
     required_patterns = _as_pattern_list(r"^IMOS/.*\.nc$")
     dataset = ObjectPhysicalDataset.model_validate(
-        {"type": "object", "patterns": required_patterns, field: normalized_patterns}
+        {"type": "object", "patterns": required_patterns, field: pattern}
     )
-    assert getattr(dataset, field) == normalized_patterns
+    assert getattr(dataset, field) == pattern
 
 
-@pytest.mark.parametrize("field", ["start_date_patterns", "end_date_patterns"])
+@pytest.mark.parametrize("field", ["start_date_pattern", "end_date_pattern"])
 @pytest.mark.parametrize(
-    "patterns",
+    "pattern",
     [
         # Invalid
         "[",
@@ -86,13 +85,13 @@ def test_date_patterns_accept_valid_values_during_model_validation(field, patter
         r"^IMOS/(\d{8})(\d{6})$",
     ],
 )
-def test_date_patterns_reject_invalid_values_during_model_validation(field, patterns):
+def test_date_patterns_reject_invalid_values_during_model_validation(field, pattern):
     required_patterns = _as_pattern_list(r"^IMOS/.*\.nc$")
     with pytest.raises(pydantic.ValidationError):
         ObjectPhysicalDataset.model_validate(
             {
                 "type": "object",
                 "patterns": required_patterns,
-                field: _as_pattern_list(patterns),
+                field: pattern,
             }
         )
