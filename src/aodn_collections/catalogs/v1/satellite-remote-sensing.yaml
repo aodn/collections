@@ -199,7 +199,7 @@ collections:
     - type: object
       start_date_pattern: *__SRS_OC_start_date_pattern__
       patterns:
-      - ^IMOS/SRS/OC/gridded/aquaP1D/.*\.aust\.picop_brewin2012in\.nc$
+      - ^IMOS/SRS/OC/gridded/aqua/P1D/.*\.aust\.picop_brewin2012in\.nc$
   tags:
   - SRS
   - aqua
