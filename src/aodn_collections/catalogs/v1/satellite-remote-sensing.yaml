@@ -12,7 +12,7 @@
     # `A|N|V|S`
     # `P1D|P1H`
     # `<YYYYmmddTHHMMSSZ>`
-    '^IMOS/SRS/OC/gridded/(?:aqua|noaa20|snpp|seawifs)/(?:P1D|P1H)/(?:19|20)\d{2}/\d{2}/(?:A|N|V|S)\.(?:P1D|P1H)\.(\d{8}T\d{6}Z)'
+    '^IMOS/SRS/OC/gridded/(?:aqua|noaa20|snpp|seawifs)/(?:P1D|P1H)/(?:19|20)\d{2}/\d{2}/(?:A|N|V|S|J)\.(?:P1D|P1H)\.(\d{8}T\d{6}Z)'
 
 name: imos-data
 collections:
@@ -189,6 +189,8 @@ collections:
   tags:
   - SRS
   - aqua
+
+# TODO: Check
 - metadata_uuid: bc428d0b-eff7-41b9-8d4c-10e666ee1312
   name: IMOS - Satellite Remote Sensing - MODIS - 01 day - Picoplankton fraction (OC3
     model and Brewin et al 2012 algorithm)
